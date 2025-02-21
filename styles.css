@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #ffffff; /* Soft background color */
+    background-color: #ffffff; /* White background */
     color: #333;
     transition: background-color 0.3s;
 }
@@ -62,13 +62,11 @@ main {
 
 /* Landing Page Section Styling */
 #landing {
-    background-color: #ffffff; /* White background */
-    text-align: center;
-    padding: 0;
-    margin-bottom: 2rem;
-    box-shadow: none;
-    animation: none;
     position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background: url('Assets/Splash.svg') center center / cover no-repeat,
+                #ffffff; /* White background with splash as cover */
     overflow: hidden;
 }
 
@@ -77,17 +75,15 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
+    width: 90%;
     text-align: center;
     z-index: 1;
     pointer-events: none;
 }
 
 .landing-text h1 {
-    font-size: 5vw; /* Scalable font size */
-    font-family: 'Ubuntu', sans-serif;
+    font-size: calc(5vw + 20px); /* Scales based on viewport */
     color: #11364d;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     margin: 0;
     padding: 0;
 }
