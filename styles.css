@@ -18,15 +18,16 @@ header {
 }
 
 .logo-container {
+    /* Only the logo is displayed */
     display: flex;
     align-items: center;
 }
 
 .logo {
-    max-height: 50px;
-    margin-right: 0.5rem;
+    max-height: 60px;
 }
 
+/* Navigation styling */
 nav ul {
     list-style: none;
     display: flex;
@@ -38,12 +39,14 @@ nav ul {
 nav a {
     text-decoration: none;
     color: #333;
-    padding: 0.5rem;
-    transition: color 0.3s;
+    padding: 0.5rem 0.75rem;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-nav a:hover {
-    color: #0078d7;
+nav a:hover, nav a:focus {
+    background-color: #0078d7;
+    color: #fff;
+    border-radius: 4px;
 }
 
 /* Section styling */
@@ -52,6 +55,7 @@ section {
     background-color: #fff;
     margin: 1rem 2rem;
     border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
 section img {
@@ -61,10 +65,29 @@ section img {
     margin-top: 1rem;
 }
 
-/* Footer */
+/* Footer styling */
 footer {
     text-align: center;
     padding: 1rem;
     background-color: #ffffff;
     border-top: 1px solid #ddd;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+    
+    section {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
 }
