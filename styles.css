@@ -68,12 +68,36 @@ main {
     margin-bottom: 2rem;
     box-shadow: none;
     animation: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.landing-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.landing-text h1 {
+    font-size: 5vw; /* Scalable font size */
+    font-family: 'Ubuntu', sans-serif;
+    color: #11364d;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    padding: 0;
 }
 
 .splash-image {
-    width: 100%;
-    height: auto;
+    width: 100vw; /* Scalable width */
+    height: 100vh; /* Scalable height */
+    object-fit: cover;
     display: block;
+    pointer-events: none;
 }
 
 /* Incentive Section Styling */
