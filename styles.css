@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f9f9f9;
+    background-color: #ffffff; /* Soft background color */
     color: #333;
     transition: background-color 0.3s;
 }
@@ -13,7 +13,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    background-color: #ffffff; /* Soft background color */
     padding: 1rem 2rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: box-shadow 0.3s;
@@ -51,7 +51,7 @@ nav a {
 }
 
 nav a:hover, nav a:focus {
-    background-color: #0078d7;
+    background-color: #9f2b2b; /* Accent color */
     color: #fff;
 }
 
@@ -62,8 +62,8 @@ main {
 
 /* Landing Page Section Styling */
 #landing {
-    background: linear-gradient(135deg, #28a4ef, #0078d7);
-    color: #fff;
+    background: linear-gradient(135deg, #aabcc3, #bfbfbf); /* Soft background colors */
+    color: #540a0e; /* Accent color */
     text-align: center;
     padding: 5rem 2rem;
     border-radius: 8px;
@@ -96,7 +96,7 @@ main {
     display: inline-block;
     padding: 1rem 2rem;
     background-color: #fff;
-    color: #0078d7;
+    color: #9f2b2b; /* Accent color */
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -104,7 +104,7 @@ main {
 }
 
 .cta-button:hover {
-    background-color: #0078d7;
+    background-color: #9f2b2b; /* Accent color */
     color: #fff;
     transform: scale(1.1);
 }
@@ -162,7 +162,7 @@ main {
 .share-incentive-button {
     padding: 1rem 2rem;
     background-color: #fff;
-    color: #0078d7;
+    color: #9f2b2b; /* Accent color */
     border: none;
     border-radius: 5px;
     font-weight: bold;
@@ -171,7 +171,7 @@ main {
 }
 
 .share-incentive-button:hover {
-    background-color: #0078d7;
+    background-color: #9f2b2b; /* Accent color */
     color: #fff;
 }
 
@@ -188,7 +188,7 @@ main {
 }
 
 article, aside {
-    background-color: #fff;
+    background-color: #ffffff; /* Soft background color */
     margin: 1rem 0;
     padding: 2rem;
     border-radius: 8px;
@@ -201,7 +201,7 @@ article:hover, aside:hover {
 }
 
 h2 {
-    color: #0078d7;
+    color: #9f2b2b; /* Accent color */
     margin-bottom: 1rem;
     border-bottom: 2px solid #eee;
     padding-bottom: 0.5rem;
@@ -297,7 +297,7 @@ h2 {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #fff;
+    background-color: #ffffff; /* Soft background color */
     border-top: 1px solid #ddd;
     transition: background-color 0.3s;
 }
