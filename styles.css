@@ -73,76 +73,69 @@ main {
 #landing {
     position: relative;
     width: 100%;
-    height: 60vh; /* viewport height */
-    display: flex; /* Use flexbox to split the landing area */
-    overflow: hidden;
-}   
+    height: 80vh;
+    display: flex;
+    background-color: #ffffff;
+}
 
 .landing-splash {
-    width: 60%; /* 60% of the landing area for the splash */
-    background: url('assets/splash.svg') center center / 100% auto no-repeat, #ffffff; /* Splash at half width */
+    position: relative;
+    width: 60%;
+    height: 100%;
+    background: url('Assets/Splash.svg') center center no-repeat;
+    background-size: contain;
 }
 
 .landing-image-area {
-    width: 40%; /* 40% of the landing area for the image */
-    background-color: #fff; /* White background for the frame effect */
+    width: 40%;
+    height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 1rem; /* Creates a padding around the image */
-    box-sizing: border-box; /* Include padding in the element's total width and height */
+    justify-content: center;
+    padding: 2rem;
+    box-sizing: border-box;
 }
 
 .landing-image-area img {
-    max-width: 100%; /* Image takes up the available space */
+    max-width: 100%;
     max-height: 100%;
-    object-fit: contain; /* Ensures the image fits within the container */
+    object-fit: contain;
 }
 
 .landing-text {
     position: absolute;
     top: 50%;
-    left: 30%; /* Adjusted to be in the middle of the splash area */
+    left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%; /* Adjusted width */
+    width: 80%;
     text-align: center;
     z-index: 1;
-    pointer-events: none;
-}
-
-.landing-text::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(255, 255, 255, 0.5); /* Increased opacity for better visibility */
-    z-index: -1;
-    animation: frostAnimation 10s infinite alternate;
 }
 
 .landing-text h1 {
-    font-size: calc(3.4vw + 20px); /* Scales based on viewport */
+    font-size: calc(2.5vw + 10px);
     color: #11364d;
     margin: 0;
-    padding: 0;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
 }
 
-.splash-image {
-    width: 100vw; /* Scalable width */
-    height: 100vh; /* Scalable height */
-    object-fit: cover;
-    display: block;
-    pointer-events: none;
-}
-
-@keyframes frostAnimation {
-    0% {
-        background-color: rgba(255, 255, 255, 0.1);
+/* Responsive adjustments for landing section */
+@media (max-width: 768px) {
+    #landing {
+        flex-direction: column;
+        height: auto;
     }
-    100% {
-        background-color: rgba(255, 255, 255, 0.2);
+
+    .landing-splash,
+    .landing-image-area {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .landing-text h1 {
+        font-size: calc(4vw + 10px);
     }
 }
 
