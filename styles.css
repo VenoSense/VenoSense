@@ -278,6 +278,51 @@ footer {
     }
 }
 
+/* Mobile-friendly adjustments */
+@media (max-width: 600px) {
+    /* Adjust header for mobile */
+    header {
+        flex-direction: column;
+        padding: 0.5rem 1rem;
+    }
+    /* Stack navigation items */
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+        width: 100%;
+    }
+    nav a {
+        padding: 0.5rem;
+        font-size: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+    /* Scale landing text for mobile */
+    .landing-text h1 {
+        font-size: calc(8vw + 10px);
+    }
+    /* Reduce main content padding */
+    main {
+        padding: 1rem;
+    }
+    /* Adjust article and aside spacing */
+    article, aside {
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+}
+
+/* Further tweaks for very small devices */
+@media (max-width: 400px) {
+    .landing-text h1 {
+        font-size: calc(10vw + 8px);
+    }
+    nav a {
+        font-size: 0.9rem;
+    }
+}
+
 /* Dark mode (optional) */
 @media (prefers-color-scheme: dark) {
     body {
