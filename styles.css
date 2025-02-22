@@ -330,6 +330,71 @@ footer {
 
 /* Responsive styles */
 @media (max-width: 768px) {
+    /* Header adjustments */
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem;
+        height: 60px;
+    }
+    
+    .logo {
+        max-height: 40px;
+    }
+    
+    #menu-toggle {
+        display: block;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 1.5rem;
+        color: #11364d;
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+
+    /* Landing section adjustments */
+    #landing {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .splash-container {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .device-container {
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+    }
+
+    .device-image {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .frost-overlay {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .frost-overlay h1 {
+        font-size: calc(3vw + 12px);
+    }
+
+    /* Navigation menu adjustments */
+    #nav-menu {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: white;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
     /* Headers: Stack and center */
     header {
         flex-direction: column;
