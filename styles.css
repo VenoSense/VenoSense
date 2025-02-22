@@ -263,39 +263,32 @@ footer {
 
 /* Responsive styles */
 @media (max-width: 768px) {
+    /* Headers: Stack and center */
     header {
         flex-direction: column;
         text-align: center;
+        padding: 0.5rem 1rem;
     }
     
-    nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
-        margin-top: 1rem;
-    }
-    
-    nav a {
-        padding: 0.5rem 0.75rem;
-    }
-    
-    main {
-        padding: 1rem;
-    }
-    
-    article, aside {
-        padding: 1.5rem;
-    }
-
-    /* Show hamburger button */
+    /* Hamburger button: show it and remove default styling */
     #menu-toggle {
         display: block;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 2rem;
+        color: #11364d;
+        cursor: pointer;
+        margin-bottom: 0.5rem;
     }
-    /* Hide nav-menu by default */
+    
+    /* Hide navigation menu by default */
     #nav-menu {
         display: none;
         width: 100%;
     }
-    /* Stack nav items vertically */
+    
+    /* When toggled, stack nav items vertically */
     #nav-menu ul {
         flex-direction: column;
         gap: 0;
@@ -310,9 +303,31 @@ footer {
         border-top: 1px solid #eee;
         width: 100%;
     }
-    /* Optionally add animation or transition */
+    
+    /* Optionally, add a transition */
     #nav-menu.show {
         display: block;
+    }
+    
+    /* Also adjust font sizes for mobile nav links */
+    nav a {
+        font-size: 1rem;
+    }
+    
+    /* Scale landing text for mobile */
+    .landing-text h1 {
+        font-size: calc(8vw + 10px);
+    }
+    
+    /* Reduce main content padding */
+    main {
+        padding: 1rem;
+    }
+    
+    /* Adjust article and aside spacing */
+    article, aside {
+        padding: 1rem;
+        margin: 0.5rem;
     }
 }
 
