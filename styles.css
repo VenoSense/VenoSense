@@ -72,11 +72,11 @@ main {
 /* Landing Page Section Styling */
 #landing {
     position: relative;
-    width: 50%;
-    height: 50vh; /* Full viewport height */
+    width: 100%;
+    height: 50vh; /* half viewport height */
     background: url('Assets/Splash.svg') center center / 100% auto no-repeat, #ffffff; /* Splash at half width */
     overflow: hidden;
-}
+}   
 
 .landing-text {
     position: absolute;
