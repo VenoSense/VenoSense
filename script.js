@@ -28,7 +28,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const menuToggle = document.getElementById('menu-toggle');
     const navMenu = document.getElementById('nav-menu');
+    const body = document.body;
+
+    // Toggle menu
     menuToggle.addEventListener('click', function() {
         navMenu.classList.toggle('show');
+        body.style.overflow = navMenu.classList.contains('show') ? 'hidden' : '';
+    });
+
+    // Close menu when clicking a link
+    navMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', function() {
+            navMenu.classList.remove('show');
+            body.style.overflow = '';
+        });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+        if (!navMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+            navMenu.classList.remove('show');
+            body.style.overflow = '';
+        }
     });
 });
