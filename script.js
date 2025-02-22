@@ -25,4 +25,10 @@ document.addEventListener('DOMContentLoaded', function() {
         alert('Thank you for sharing! You have been entered into the draw. (This is a placeholder)');
         // Replace the alert with actual incentive logic here (e.g., form submission, cookie tracking)
     });
+
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    menuToggle.addEventListener('click', function() {
+        navMenu.classList.toggle('show');
+    });
 });

@@ -55,6 +55,15 @@ nav a:hover, nav a:focus {
     color: #fff;
 }
 
+/* Hamburger Button default hidden */
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 /* Main content styling */
 main {
     padding: 2rem;
@@ -275,6 +284,35 @@ footer {
     
     article, aside {
         padding: 1.5rem;
+    }
+
+    /* Show hamburger button */
+    #menu-toggle {
+        display: block;
+    }
+    /* Hide nav-menu by default */
+    #nav-menu {
+        display: none;
+        width: 100%;
+    }
+    /* Stack nav items vertically */
+    #nav-menu ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+    }
+    #nav-menu li {
+        width: 100%;
+    }
+    #nav-menu a {
+        padding: 0.75rem;
+        text-align: center;
+        border-top: 1px solid #eee;
+        width: 100%;
+    }
+    /* Optionally add animation or transition */
+    #nav-menu.show {
+        display: block;
     }
 }
 
