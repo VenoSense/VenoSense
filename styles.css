@@ -80,7 +80,7 @@ main {
 
 .landing-splash {
     width: 60%; /* 60% of the landing area for the splash */
-    background: url('Assets/Splash.svg') center center / 100% auto no-repeat, #ffffff; /* Splash at half width */
+    background: url('assets/splash.svg') center center / 100% auto no-repeat, #ffffff; /* Splash at half width */
 }
 
 .landing-image-area {
@@ -117,8 +117,7 @@ main {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.5); /* Increased opacity for better visibility */
     z-index: -1;
     animation: frostAnimation 10s infinite alternate;
 }
@@ -336,7 +335,6 @@ footer {
         gap: 0;
         padding: 0;
     }
-    #nav-menu li {
         width: 100%;
     }
     #nav-menu a {
@@ -347,10 +345,11 @@ footer {
     }
     
     /* Optionally, add a transition */
+    /* When toggled, stack nav items vertically */
+    /* Optionally, add a transition */
     #nav-menu.show {
         display: block;
     }
-    
     /* Also adjust font sizes for mobile nav links */
     nav a {
         font-size: 1rem;
@@ -358,7 +357,7 @@ footer {
     
     /* Scale landing text for mobile */
     .landing-text h1 {
-        font-size: calc(8vw + 10px);
+        font-size: calc(8vw + 10px); /* Scales based on viewport */
     }
     
     /* Reduce main content padding */
@@ -411,7 +410,7 @@ footer {
 /* Further tweaks for very small devices */
 @media (max-width: 400px) {
     .landing-text h1 {
-        font-size: calc(10vw + 8px);
+        font-size: calc(8vw + 10px); /* Scales based on viewport */
     }
     nav a {
         font-size: 0.9rem;
