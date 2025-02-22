@@ -74,8 +74,7 @@ main {
     position: relative;
     width: 100%;
     height: 100vh; /* Full viewport height */
-    background: url('Assets/Splash.svg') center center / cover no-repeat,
-                #ffffff; /* White background with splash as cover */
+    background: url('Assets/Splash.svg') center center / 50% auto no-repeat, #ffffff; /* Splash at half width */
     overflow: hidden;
 }
 
