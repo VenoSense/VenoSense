@@ -73,20 +73,54 @@ main {
 #landing {
     position: relative;
     width: 100%;
-    height: 50vh; /* half viewport height */
-    background: url('Assets/Splash.svg') center center / 100% auto no-repeat, #ffffff; /* Splash at half width */
+    height: 60vh; /* viewport height */
+    display: flex; /* Use flexbox to split the landing area */
     overflow: hidden;
 }   
+
+.landing-splash {
+    width: 60%; /* 60% of the landing area for the splash */
+    background: url('Assets/Splash.svg') center center / 100% auto no-repeat, #ffffff; /* Splash at half width */
+}
+
+.landing-image-area {
+    width: 40%; /* 40% of the landing area for the image */
+    background-color: #fff; /* White background for the frame effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem; /* Creates a padding around the image */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.landing-image-area img {
+    max-width: 100%; /* Image takes up the available space */
+    max-height: 100%;
+    object-fit: contain; /* Ensures the image fits within the container */
+}
 
 .landing-text {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 30%; /* Adjusted to be in the middle of the splash area */
     transform: translate(-50%, -50%);
-    width: 90%;
+    width: 50%; /* Adjusted width */
     text-align: center;
     z-index: 1;
     pointer-events: none;
+}
+
+.landing-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    z-index: -1;
+    animation: frostAnimation 10s infinite alternate;
 }
 
 .landing-text h1 {
@@ -102,6 +136,15 @@ main {
     object-fit: cover;
     display: block;
     pointer-events: none;
+}
+
+@keyframes frostAnimation {
+    0% {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    100% {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
 }
 
 /* Incentive Section Styling */
