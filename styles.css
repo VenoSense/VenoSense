@@ -90,7 +90,7 @@ main {
 }
 
 .landing-text h1 {
-    font-size: calc(5vw + 20px); /* Scales based on viewport */
+    font-size: calc(2.5vw + 10px);
     color: #11364d;
     margin: 0;
     padding: 0;
