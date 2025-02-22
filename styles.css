@@ -72,9 +72,9 @@ main {
 /* Landing Page Section Styling */
 #landing {
     position: relative;
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-    background: url('Assets/Splash.svg') center center / 30% auto no-repeat, #ffffff; /* Splash at half width */
+    width: 50%;
+    height: 50vh; /* Full viewport height */
+    background: url('Assets/Splash.svg') center center / 100% auto no-repeat, #ffffff; /* Splash at half width */
     overflow: hidden;
 }
 
@@ -90,7 +90,7 @@ main {
 }
 
 .landing-text h1 {
-    font-size: calc(2.5vw + 10px);
+    font-size: calc(3.4vw + 20px); /* Scales based on viewport */
     color: #11364d;
     margin: 0;
     padding: 0;
