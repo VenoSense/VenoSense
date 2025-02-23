@@ -477,141 +477,106 @@ footer {
         top: 0;
         left: 0;
         right: 0;
-        height: 60px;
-        padding: 0.5rem 1rem;
+        height: 50px;
+        padding: 0;
         background: #fff;
         z-index: 1000;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
     .logo-container {
-        flex: 0 0 auto;
+        padding-left: 1rem;
     }
 
     .logo {
-        max-height: 40px;
+        max-height: 35px;
     }
 
     #menu-toggle {
-        display: block;
-        width: 40px;
-        height: 40px;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background: transparent;
         border: none;
-        font-size: 1.5rem;
         color: #11364d;
         cursor: pointer;
         z-index: 1001;
     }
 
+    /* Navigation menu */
     #nav-menu {
         display: none;
         position: fixed;
-        top: 60px;
+        top: 50px;
         left: 0;
         right: 0;
-        bottom: 0;
-        background: #fff;
-        padding: 1rem;
-        overflow-y: auto;
-        z-index: 999;
+        background: white;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
     #nav-menu.show {
         display: block;
     }
 
-    nav ul {
+    #nav-menu ul {
+        margin: 0;
+        padding: 0;
         flex-direction: column;
-        gap: 0;
     }
 
-    nav a {
+    #nav-menu li {
+        width: 100%;
+        border-top: 1px solid #eee;
+    }
+
+    #nav-menu a {
         display: block;
         padding: 1rem;
         text-align: center;
-        border-bottom: 1px solid #eee;
-        font-size: 1.1rem;
     }
 
-    /* Main Content Adjustments */
+    /* Main content adjustments */
     main {
-        margin-top: 60px;
-        padding: 1rem;
+        margin-top: 50px;
+        padding: 0;
     }
 
-    /* Landing Section */
+    /* Landing section */
     #landing {
-        flex-direction: column;
-        height: auto;
-        margin: -1rem -1rem 1rem -1rem;
+        margin: 0;
+        padding: 0;
+        width: 100%;
     }
 
     .splash-container {
         width: 100%;
-        height: 40vh;
-        min-height: 300px;
+        height: 30vh;
+        min-height: 200px;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
     }
 
-    .frost-overlay {
-        width: 90%;
-        padding: 1.5rem;
-    }
-
-    .frost-overlay h1 {
-        font-size: calc(4vw + 8px);
+    .splash-bg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin: 0;
+        padding: 0;
     }
 
     .device-container {
         width: 100%;
-        height: auto;
-        padding: 2rem 1rem;
-    }
-
-    .device-image {
-        max-width: 90%;
-        margin: 0 auto;
-    }
-
-    /* Content Sections */
-    article, aside {
-        padding: 1.5rem;
-        margin: 1rem 0;
-        border-radius: 8px;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-    }
-
-    /* Tables */
-    .comparison-table {
-        margin: 1rem -1rem;
-        width: calc(100% + 2rem);
-    }
-
-    .comparison-table table {
-        font-size: 0.9rem;
-    }
-
-    .comparison-table th, 
-    .comparison-table td {
-        padding: 0.5rem;
-    }
-
-    /* Touch-friendly elements */
-    nav a,
-    .cta-button,
-    .share-incentive-button {
-        min-height: 44px;
-        min-width: 44px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        padding: 1rem;
+        margin: 0;
+        background: #fff;
     }
 }
 

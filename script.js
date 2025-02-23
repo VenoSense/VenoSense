@@ -31,63 +31,61 @@ document.addEventListener('DOMContentLoaded', function() {
     const body = document.body;
     let scrollPosition = 0;
 
-    // Handle menu toggle
-    function toggleMenu() {
-        const isOpen = navMenu.classList.contains('show');
+    function toggleMenu(event) {
+        if (event) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+
+        const isMenuOpen = navMenu.classList.contains('show');
         
-        if (!isOpen) {
-            // Store scroll position and prevent body scroll
+        if (!isMenuOpen) {
+            // Opening menu
             scrollPosition = window.pageYOffset;
             body.style.overflow = 'hidden';
             body.style.position = 'fixed';
             body.style.top = `-${scrollPosition}px`;
             body.style.width = '100%';
+            navMenu.classList.add('show');
+            menuToggle.setAttribute('aria-expanded', 'true');
         } else {
-            // Restore scroll position
+            // Closing menu
             body.style.removeProperty('overflow');
             body.style.removeProperty('position');
             body.style.removeProperty('top');
             body.style.removeProperty('width');
             window.scrollTo(0, scrollPosition);
+            navMenu.classList.remove('show');
+            menuToggle.setAttribute('aria-expanded', 'false');
         }
-        
-        navMenu.classList.toggle('show');
-        menuToggle.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
     }
 
-    // Menu toggle event
-    menuToggle.addEventListener('click', function(e) {
-        e.stopPropagation();
-        toggleMenu();
-    });
+    // Menu toggle button click
+    menuToggle.addEventListener('click', toggleMenu);
 
-    // Close menu when clicking outside
-    document.addEventListener('click', function(e) {
-        if (navMenu.classList.contains('show') && 
-            !navMenu.contains(e.target) && 
-            !menuToggle.contains(e.target)) {
-            toggleMenu();
-        }
-    });
-
-    // Handle navigation clicks
+    // Close menu when clicking a link
     navMenu.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function() {
             if (window.innerWidth <= 768) {
                 toggleMenu();
             }
         });
     });
 
-    // Handle resize events
-    let resizeTimer;
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+        if (navMenu.classList.contains('show') && 
+            !navMenu.contains(event.target) && 
+            !menuToggle.contains(event.target)) {
+            toggleMenu();
+        }
+    });
+
+    // Close menu on resize if needed
     window.addEventListener('resize', function() {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(function() {
-            if (window.innerWidth > 768 && navMenu.classList.contains('show')) {
-                toggleMenu();
-            }
-        }, 250);
+        if (window.innerWidth > 768 && navMenu.classList.contains('show')) {
+            toggleMenu();
+        }
     });
 
     // Add touch events for better mobile interaction
