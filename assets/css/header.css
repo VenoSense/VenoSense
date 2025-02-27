@@ -1,6 +1,6 @@
 /**
- * VenoSense - Shared Header Styles
- * This file contains all header-related styling for consistent appearance across pages
+ * VenoSense - Page Header Component
+ * Standardized hero section for all non-home pages
  */
 
 .page-header {
@@ -19,8 +19,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('../images/header-pattern.svg');
-    background-size: cover;
+    background: url('../assets/images/header-pattern.png');
+    background-size: 400px;
     opacity: 0.05;
     z-index: 0;
 }
@@ -37,7 +37,7 @@
 }
 
 .page-header p {
-    font-size: var(--text-lg);
+    font-size: clamp(1rem, 2vw, var(--text-lg));
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
@@ -49,13 +49,5 @@
 @media (max-width: 768px) {
     .page-header {
         padding: var(--space-2xl) 0;
-    }
-    
-    .page-header h1 {
-        font-size: clamp(1.75rem, 4vw, var(--text-3xl));
-    }
-    
-    .page-header p {
-        font-size: var(--text-base);
     }
 }

@@ -3,224 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact VenoSense - Get in Touch with Our Team | VenoSense</title>
+    <title>Contact VenoSense - Get in Touch with Our Team</title>
     
     <!-- SEO Meta Tags -->
     <meta name="description" content="Contact the VenoSense team to learn more about our AI-powered DVT detection technology or discuss partnership opportunities.">
-    <meta name="keywords" content="VenoSense contact, DVT detection contact, healthcare technology partnership, ultrasound innovation">
-    <meta name="author" content="VenoSense Team">
-    
-    <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Contact VenoSense - Get in Touch">
-    <meta property="og:description" content="Reach out to the VenoSense team to learn more about our AI-powered DVT detection technology.">
-    <meta property="og:image" content="assets/images/og-image.jpg">
-    <meta property="og:url" content="https://venosense.org/contact">
-    <meta property="og:type" content="website">
+    <meta name="keywords" content="VenoSense contact, DVT detection contact, healthcare technology partnership">
     
     <!-- Stylesheets -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/contact.css">
     
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.ico">
 </head>
 <body>
-    <header>
-        <div class="container header-container">
-            <div class="logo-container">
-                <a href="index.html">
-                    <img src="Assets/Logo.png" alt="VenoSense Logo" class="logo">
-                </a>
-            </div>
-            
-            <button id="menu-toggle" aria-label="Toggle Navigation">
-                <span class="menu-icon"></span>
-            </button>
-            
-            <nav aria-label="Main Navigation">
-                <div id="nav-menu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="technology.html">Technology</a></li>
-                        <li><a href="workflow.html">Workflow</a></li>
-                        <li><a href="risk-factors.html">Risk Factors</a></li>
-                        <li><a href="competition.html">Competition</a></li>
-                        <li><a href="team.html">Team</a></li>
-                        <li><a href="contact.html" class="active">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
-
+    <!-- Header Component -->
+    <vs-header></vs-header>
+    
     <main>
-        <section class="page-header">
-            <div class="container">
-                <h1>Contact Us</h1>
-                <p>Get in touch with the VenoSense team</p>
-            </div>
-        </section>
+        <!-- Page Header Component -->
+        <vs-page-header
+            data-title="Get in Touch"
+            data-description="Have questions or interested in learning more about VenoSense? We'd love to hear from you.">
+        </vs-page-header>
         
-        <section class="contact-section">
+        <!-- Contact Section -->
+        <section class="contact-section section">
             <div class="container">
                 <div class="contact-grid">
                     <div class="contact-info">
-                        <h2>How to Reach Us</h2>
-                        <p>We're always interested in hearing from healthcare professionals, potential partners, and those interested in our technology.</p>
+                        <h2>Contact Information</h2>
+                        <p class="contact-intro">
+                            We're always interested in hearing from healthcare professionals, potential partners, and those interested in our technology. 
+                            Here's how you can reach us:
+                        </p>
                         
-                        <div class="contact-method">
-                            <h3>General Inquiries</h3>
-                            <p><a href="mailto:contact@venosense.org">contact@venosense.org</a></p>
-                        </div>
-                        
-                        <div class="contact-method">
-                            <h3>Location</h3>
-                            <p>Seattle, Washington, USA</p>
-                        </div>
-                        
-                        <div class="team-contacts">
-                            <h3>Team Members</h3>
-                            <ul class="team-contact-list">
-                                <li>
-                                    <span class="name">Justus Brown</span>
-                                    <span class="role">Software Engineering</span>
-                                    <a href="mailto:justus@venosense.org" class="email">justus@venosense.org</a>
-                                </li>
-                                <li>
-                                    <span class="name">Atticus Carter</span>
-                                    <span class="role">Software Engineering</span>
-                                    <a href="mailto:atticus@venosense.org" class="email">atticus@venosense.org</a>
-                                </li>
-                                <li>
-                                    <span class="name">Cynthia Sainz</span>
-                                    <span class="role">Experimental Design</span>
-                                    <a href="mailto:cynthia@venosense.org" class="email">cynthia@venosense.org</a>
-                                </li>
-                                <li>
-                                    <span class="name">Kirandip Walia</span>
-                                    <span class="role">Clinical Research</span>
-                                    <a href="mailto:kirandip@venosense.org" class="email">kirandip@venosense.org</a>
-                                </li>
-                            </ul>
-                        </div>
-                        
-                        <div class="social-links">
-                            <h3>Connect With Us</h3>
-                            <div class="social-icons">
-                                <a href="#" aria-label="LinkedIn" class="social-icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"></path>
                                     </svg>
-                                    LinkedIn
-                                </a>
-                                <a href="#" aria-label="Twitter" class="social-icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
-                                    </svg>
-                                    Twitter
-                                </a>
+                                </div>
+                                <div>
+                                    <h3>Email</h3>
+                                    <p><a href="mailto:contact@venosense.org">contact@venosense.org</a></p>
+                                </div>
                             </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3>Location</h3>
+                                    <p>Seattle, Washington, USA</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 12.75C13.63 12.75 15.07 13.14 16.24 13.65C17.32 14.13 18 15.21 18 16.38V18H6V16.39C6 15.21 6.68 14.13 7.76 13.66C8.93 13.14 10.37 12.75 12 12.75M12 4C13.93 4 15.5 5.57 15.5 7.5C15.5 9.43 13.93 11 12 11C10.07 11 8.5 9.43 8.5 7.5C8.5 5.57 10.07 4 12 4M12 6C11.17 6 10.5 6.67 10.5 7.5C10.5 8.33 11.17 9 12 9C12.83 9 13.5 8.33 13.5 7.5C13.5 6.67 12.83 6 12 6Z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3>Connect</h3>
+                                    <div class="social-links">
+                                        <a href="#" aria-label="LinkedIn" class="social-link">LinkedIn</a>
+                                        <a href="#" aria-label="Twitter" class="social-link">Twitter</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="team-image">
+                            <img src="Assets/Hardware Overview.png" alt="VenoSense Device" class="hardware-image">
                         </div>
                     </div>
                     
                     <div class="contact-form-container">
                         <h2>Send Us a Message</h2>
-                        <p>Please fill out the form below and we'll get back to you as soon as possible.</p>
                         
-                        <!-- Contact Form Placeholder -->
                         <form id="contact-form" class="contact-form">
-                            <div class="form-group">
-                                <label for="name">Full Name</label>
-                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                            <div class="form-fields">
+                                <div class="form-group">
+                                    <label for="name">Full Name <span class="required">*</span></label>
+                                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email Address <span class="required">*</span></label>
+                                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="organization">Organization</label>
+                                    <input type="text" id="organization" name="organization" placeholder="Your company or institution">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="subject">Subject <span class="required">*</span></label>
+                                    <select id="subject" name="subject" required>
+                                        <option value="" disabled selected>Select a topic</option>
+                                        <option value="general">General Inquiry</option>
+                                        <option value="partnership">Partnership Opportunity</option>
+                                        <option value="demo">Request a Demo</option>
+                                        <option value="support">Technical Support</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group full-width">
+                                    <label for="message">Message <span class="required">*</span></label>
+                                    <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+                                </div>
+                                
+                                <div class="form-group full-width">
+                                    <div class="form-checkbox">
+                                        <input type="checkbox" id="consent" name="consent" required>
+                                        <label for="consent">I consent to VenoSense storing my contact information for the purpose of responding to my inquiry.</label>
+                                    </div>
+                                </div>
                             </div>
                             
-                            <div class="form-group">
-                                <label for="email">Email Address</label>
-                                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                                <button type="reset" class="btn btn-outline">Clear Form</button>
                             </div>
-                            
-                            <div class="form-group">
-                                <label for="organization">Organization</label>
-                                <input type="text" id="organization" name="organization" placeholder="Your company or institution">
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="subject">Subject</label>
-                                <select id="subject" name="subject" required>
-                                    <option value="" disabled selected>Select a topic</option>
-                                    <option value="general">General Inquiry</option>
-                                    <option value="partnership">Partnership Opportunity</option>
-                                    <option value="demo">Request a Demo</option>
-                                    <option value="support">Technical Support</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
-                            </div>
-                            
-                            <div class="form-group form-checkbox">
-                                <input type="checkbox" id="consent" name="consent" required>
-                                <label for="consent">I consent to VenoSense storing my contact information for the purpose of responding to my inquiry.</label>
-                            </div>
-                            
-                            <button type="submit" class="btn btn-primary">Send Message</button>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
+        
+        <!-- Team Section -->
+        <section class="team-contact section bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Meet Our Team</h2>
+                    <p class="subtitle">The people behind VenoSense</p>
+                </div>
+                
+                <div class="team-grid">
+                    <div class="team-member-card">
+                        <h3>Justus Brown</h3>
+                        <p class="team-role">Software Engineering</p>
+                        <p class="team-email"><a href="mailto:justus@venosense.org">justus@venosense.org</a></p>
+                    </div>
+                    
+                    <div class="team-member-card">
+                        <h3>Atticus Carter</h3>
+                        <p class="team-role">Software Engineering</p>
+                        <p class="team-email"><a href="mailto:atticus@venosense.org">atticus@venosense.org</a></p>
+                    </div>
+                    
+                    <div class="team-member-card">
+                        <h3>Cynthia Sainz</h3>
+                        <p class="team-role">Experimental Design</p>
+                        <p class="team-email"><a href="mailto:cynthia@venosense.org">cynthia@venosense.org</a></p>
+                    </div>
+                    
+                    <div class="team-member-card">
+                        <h3>Kirandip Walia</h3>
+                        <p class="team-role">Clinical Research</p>
+                        <p class="team-email"><a href="mailto:kirandip@venosense.org">kirandip@venosense.org</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <img src="Assets/Logo.png" alt="VenoSense Logo" class="footer-logo">
-                    <p>Revolutionizing vascular health monitoring with AI-powered ultrasound technology.</p>
-                </div>
-                
-                <div class="footer-nav">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="technology.html">Technology</a></li>
-                        <li><a href="workflow.html">Workflow</a></li>
-                        <li><a href="risk-factors.html">Risk Factors</a></li>
-                        <li><a href="competition.html">Competition</a></li>
-                        <li><a href="team.html">Team</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-contact">
-                    <h4>Contact Us</h4>
-                    <p>Email: <a href="mailto:contact@venosense.org">contact@venosense.org</a></p>
-                </div>
-            </div>
+    
+    <!-- Footer Component -->
+    <vs-footer></vs-footer>
+    
+    <!-- Scripts -->
+    <script src="js/include-system.js"></script>
+    <script>
+        // Form validation and submission handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
             
-            <div class="footer-bottom">
-                <p>&copy; 2025 VenoSense. All rights reserved.</p>
-                <div class="footer-social">
-                    <a href="#" aria-label="LinkedIn" class="social-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
-                        </svg>
-                    </a>
-                    <a href="#" aria-label="Twitter" class="social-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="assets/js/main.js"></script>
+            // In a real implementation, you would send the form data to a server here
+            // For this demo, we'll just show a success message
+            
+            const formData = new FormData(this);
+            let formValues = {};
+            
+            formData.forEach((value, key) => {
+                formValues[key] = value;
+            });
+            
+            console.log('Form submitted:', formValues);
+            
+            // Show success message
+            showMessage('Thank you for your message! We will get back to you shortly.', 'success');
+            
+            // Reset form
+            this.reset();
+        });
+        
+        function showMessage(message, type) {
+            // Create message element
+            const messageEl = document.createElement('div');
+            messageEl.className = `form-message ${type}`;
+            messageEl.textContent = message;
+            
+            // Add to page
+            const form = document.getElementById('contact-form');
+            form.parentNode.insertBefore(messageEl, form);
+            
+            // Remove after delay
+            setTimeout(() => {
+                messageEl.remove();
+            }, 5000);
+        }
+    </script>
 </body>
 </html>
