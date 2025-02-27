@@ -1,0 +1,15 @@
+/* Make sure the workflow images are properly styled */
+.workflow-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-md);
+}
+
+.step-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-md);
+    margin-top: var(--space-md);
+    box-shadow: var(--shadow-sm);
+}

@@ -335,8 +335,10 @@ header {
     height: 100%;
 }
 
+/* Logo sizing adjustments */
 .logo {
-    height: 50px;
+    height: auto;
+    width: 180px; /* Adjust based on actual logo dimensions */
     transition: transform var(--transition-normal);
 }
 
@@ -562,8 +564,10 @@ footer {
     margin-bottom: var(--space-2xl);
 }
 
+/* Logo sizing adjustments */
 .footer-logo {
-    height: 40px;
+    height: auto;
+    width: 160px; /* Slightly smaller in footer */
     margin-bottom: var(--space-md);
 }
 
@@ -852,6 +856,24 @@ select:focus {
     font-size: var(--text-sm);
 }
 
+/* Special styling for hardware overview image with transparent background */
+.hardware-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.hardware-container {
+    background: linear-gradient(to bottom right, var(--background-light), #ffffff);
+    padding: var(--space-md);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--space-md);
+}
+
 /* ===== RESPONSIVE STYLES ===== */
 @media (max-width: 1200px) {
     :root {
@@ -979,6 +1001,10 @@ select:focus {
     .grid-col-4 {
         grid-template-columns: 1fr;
     }
+    
+    .logo {
+        width: 140px; /* Smaller on mobile */
+    }
 }
 
 @media (max-width: 576px) {
@@ -1002,5 +1028,11 @@ select:focus {
     .section {
         padding-top: var(--space-xl);
         padding-bottom: var(--space-xl);
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 120px; /* Even smaller on very small devices */
     }
 }
