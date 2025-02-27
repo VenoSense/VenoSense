@@ -1,0 +1,338 @@
+/**
+ * VenoSense - Team Page Specific Styles
+ * Works with the unified styles.css file
+ */
+
+/* ===== TEAM INTRODUCTION ===== */
+.team-intro {
+    font-size: var(--text-lg);
+    max-width: 800px;
+    margin: var(--space-4) auto var(--space-6);
+    color: var(--gray-700);
+}
+
+.subtitle {
+    font-size: var(--text-lg);
+    color: var(--gray-600);
+    max-width: 700px;
+    margin: var(--space-3) auto var(--space-6);
+}
+
+/* ===== FOUNDERS SECTION ===== */
+.founders-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+    margin-top: var(--space-8);
+}
+
+.team-member.founder {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: var(--space-6);
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.team-member.founder:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.team-member__photo {
+    overflow: hidden;
+    border-radius: var(--radius-md);
+    height: 100%;
+}
+
+.team-member__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-normal);
+}
+
+.team-member:hover .team-member__photo img {
+    transform: scale(1.05);
+}
+
+.team-member__info {
+    padding: var(--space-6);
+    display: flex;
+    flex-direction: column;
+}
+
+.team-member__info h3 {
+    color: var(--primary);
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-2);
+}
+
+.team-member__title {
+    color: var(--secondary);
+    font-weight: 500;
+    font-size: var(--text-md);
+    margin-bottom: var(--space-4);
+}
+
+.team-member__bio {
+    color: var(--gray-700);
+    margin-bottom: var(--space-4);
+    flex-grow: 1;
+}
+
+.team-member__contact {
+    display: flex;
+    gap: var(--space-4);
+    margin-top: var(--space-3);
+}
+
+.team-member__email,
+.team-member__linkedin {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    color: var(--primary);
+    font-weight: 500;
+    position: relative;
+}
+
+.team-member__email::before,
+.team-member__linkedin::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.team-member__email::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%239f2b2b' viewBox='0 0 24 24'%3E%3Cpath d='M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z'/%3E%3C/svg%3E");
+}
+
+.team-member__linkedin::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%239f2b2b' viewBox='0 0 24 24'%3E%3Cpath d='M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z'/%3E%3C/svg%3E");
+}
+
+/* ===== CORE TEAM SECTION ===== */
+.core-team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-5);
+    margin-top: var(--space-6);
+}
+
+.team-member {
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    height: 100%;
+}
+
+.team-member:not(.founder) {
+    padding-bottom: var(--space-4);
+}
+
+.team-member:not(.founder) .team-member__photo {
+    height: 250px;
+    border-radius: 0;
+}
+
+.team-member:not(.founder) h3, 
+.team-member:not(.founder) .team-member__title, 
+.team-member:not(.founder) .team-member__bio-short, 
+.team-member:not(.founder) .team-member__contact {
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+}
+
+.team-member:not(.founder) h3 {
+    margin-top: var(--space-4);
+    font-size: var(--text-xl);
+}
+
+.team-member:not(.founder) .team-member__title {
+    font-size: var(--text-base);
+    margin-bottom: var(--space-3);
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.team-member__bio-short {
+    color: var(--gray-700);
+    font-size: var(--text-sm);
+    margin-bottom: var(--space-4);
+    flex-grow: 1;
+}
+
+/* ===== ADVISORS SECTION ===== */
+.advisors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-5);
+    margin-top: var(--space-6);
+}
+
+.advisor {
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    text-align: center;
+}
+
+.advisor:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.advisor__photo {
+    height: 200px;
+    overflow: hidden;
+}
+
+.advisor__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-normal);
+}
+
+.advisor:hover .advisor__photo img {
+    transform: scale(1.05);
+}
+
+.advisor h3 {
+    color: var(--primary);
+    margin-top: var(--space-4);
+    padding: 0 var(--space-4);
+    font-size: var(--text-lg);
+}
+
+.advisor__title {
+    color: var(--secondary);
+    padding: 0 var(--space-4);
+    margin-bottom: var(--space-2);
+    font-size: var(--text-sm);
+    font-weight: 500;
+}
+
+.advisor__specialty {
+    color: var(--gray-600);
+    padding: 0 var(--space-4) var(--space-4);
+    font-size: var(--text-sm);
+    font-style: italic;
+}
+
+/* ===== JOIN TEAM SECTION ===== */
+.join-team-section {
+    padding-top: var(--space-8);
+    padding-bottom: var(--space-8);
+}
+
+.join-team-section .container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: var(--space-8);
+    align-items: center;
+}
+
+.join-team-content h2 {
+    margin-bottom: var(--space-4);
+}
+
+.join-team-content p {
+    color: var(--gray-700);
+    margin-bottom: var(--space-6);
+    font-size: var(--text-lg);
+}
+
+.join-team-cta {
+    display: flex;
+    gap: var(--space-4);
+}
+
+/* Special handling for hardware image */
+.hardware-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: var(--radius-md);
+    background: linear-gradient(135deg, var(--gray-50), var(--white));
+    padding: var(--space-4);
+}
+
+/* ===== PLACEHOLDER IMAGES ===== */
+.team-member__photo img[src$="justus.jpg"],
+.team-member__photo img[src$="atticus.jpg"],
+.team-member__photo img[src$="cynthia.jpg"],
+.team-member__photo img[src$="kirandip.jpg"],
+.team-member__photo img[src$="elena.jpg"],
+.team-member__photo img[src$="marcus.jpg"],
+.advisor__photo img[src$="advisor1.jpg"],
+.advisor__photo img[src$="advisor2.jpg"],
+.advisor__photo img[src$="advisor3.jpg"] {
+    /* Use a placeholder gradient when images aren't available */
+    background: linear-gradient(135deg, var(--primary-light), var(--secondary-light));
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+@media (max-width: 992px) {
+    .join-team-section .container {
+        grid-template-columns: 1fr;
+    }
+    
+    .join-team-image {
+        order: -1;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .join-team-image .hardware-image {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .team-member.founder {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-member__photo {
+        height: 300px;
+    }
+    
+    .team-member.founder .team-member__photo {
+        border-radius: 0;
+    }
+    
+    .team-member__info {
+        padding: var(--space-4);
+    }
+    
+    .team-member__bio {
+        margin-bottom: var(--space-3);
+    }
+    
+    .join-team-cta {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .team-member__contact {
+        flex-direction: column;
+        gap: var(--space-3);
+    }
+}
