@@ -1,0 +1,341 @@
+/**
+ * VenoSense - Workflow Page Specific Styles
+ */
+
+/* ===== WORKFLOW OVERVIEW ===== */
+.overview-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: var(--space-2xl);
+    align-items: center;
+}
+
+.overview-content p {
+    color: var(--text-medium);
+    margin-bottom: var(--space-lg);
+}
+
+.workflow-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-md);
+}
+
+/* Benefit items */
+.workflow-benefits {
+    margin-top: var(--space-xl);
+}
+
+.benefit-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: var(--space-lg);
+}
+
+.benefit-icon {
+    flex: 0 0 60px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(159, 43, 43, 0.1);
+    border-radius: 50%;
+    margin-right: var(--space-lg);
+}
+
+.benefit-text h3 {
+    margin: 0 0 var(--space-xs) 0;
+    color: var(--secondary-color);
+    font-size: var(--text-lg);
+}
+
+.benefit-text p {
+    margin: 0;
+    color: var(--text-medium);
+}
+
+/* Icon placeholders */
+.icon-placeholder {
+    width: 30px;
+    height: 30px;
+    background-color: var(--primary-color);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+}
+
+/* ===== WORKFLOW STEPS ===== */
+.steps-container {
+    margin-top: var(--space-2xl);
+    position: relative;
+}
+
+.workflow-step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: var(--space-3xl);
+    position: relative;
+}
+
+.workflow-step:last-child {
+    margin-bottom: 0;
+}
+
+.workflow-step::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 40px;
+    width: 2px;
+    height: calc(100% + var(--space-3xl) - 40px);
+    background-color: rgba(159, 43, 43, 0.15);
+    z-index: 0;
+}
+
+.workflow-step:last-child::before {
+    display: none;
+}
+
+.step-number {
+    flex: 0 0 80px;
+    height: 80px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-2xl);
+    font-weight: 700;
+    margin-right: var(--space-xl);
+    position: relative;
+    z-index: 1;
+    box-shadow: var(--shadow-md);
+}
+
+.step-content {
+    flex: 1;
+    background-color: var(--background-white);
+    padding: var(--space-xl);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.step-content h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--space-sm);
+}
+
+.step-content p {
+    color: var(--text-medium);
+    margin-bottom: var(--space-md);
+}
+
+.step-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-md);
+    margin-top: var(--space-md);
+    box-shadow: var(--shadow-sm);
+}
+
+/* ===== CLINICAL INTEGRATION ===== */
+.integration-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--space-2xl);
+    align-items: center;
+}
+
+.integration-content h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--space-md);
+}
+
+.integration-content p {
+    color: var(--text-medium);
+    margin-bottom: var(--space-lg);
+}
+
+.settings-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+}
+
+.setting-item {
+    background-color: var(--background-light);
+    padding: var(--space-lg);
+    border-radius: var(--border-radius-md);
+    border-left: 3px solid var(--primary-color);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.setting-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.setting-item h4 {
+    color: var(--secondary-color);
+    margin-bottom: var(--space-xs);
+}
+
+.setting-item p {
+    margin: 0;
+    color: var(--text-medium);
+    font-size: var(--text-sm);
+}
+
+/* ===== WELLS SCORE SECTION ===== */
+.wells-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xl);
+    align-items: center;
+}
+
+.wells-content h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--space-md);
+}
+
+.wells-content p {
+    color: var(--text-medium);
+    margin-bottom: var(--space-lg);
+}
+
+.wells-criteria {
+    background-color: var(--background-white);
+    padding: var(--space-lg);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.wells-criteria h4 {
+    color: var(--secondary-color);
+    margin-bottom: var(--space-md);
+}
+
+.wells-criteria ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-sm) var(--space-lg);
+}
+
+.wells-criteria li {
+    position: relative;
+    padding-left: var(--space-lg);
+    color: var(--text-medium);
+    font-size: var(--text-sm);
+}
+
+.wells-criteria li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.image-caption {
+    text-align: center;
+    color: var(--text-light);
+    font-style: italic;
+    margin-top: var (--space-sm);
+    font-size: var(--text-sm);
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+@media (max-width: 1100px) {
+    .overview-grid,
+    .integration-grid,
+    .wells-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+    }
+    
+    .settings-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .overview-image,
+    .integration-image {
+        order: -1;
+    }
+    
+    .wells-criteria ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .benefit-item {
+        flex-direction: column;
+    }
+    
+    .benefit-icon {
+        margin: 0 0 var(--space-sm) 0;
+    }
+    
+    .workflow-step {
+        flex-direction: column;
+    }
+    
+    .step-number {
+        margin: 0 0 var(--space-md) 0;
+        align-self: center;
+    }
+    
+    .workflow-step::before {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .settings-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Special handling for hardware image with transparent background */
+.hardware-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+/* Animation for step appearance */
+@keyframes stepAppear {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.step-hidden {
+    opacity: 0;
+}
+
+.animate-step {
+    animation: stepAppear 0.6s ease-out forwards;
+}
+
+/* Special container for hardware image */
+.hardware-container {
+    background: linear-gradient(135deg, #f7f9fc, #ffffff);
+    padding: var(--space-lg);
+    border-radius: var(--border-radius-lg);
+    margin-bottom: var(--space-md);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
