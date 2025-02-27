@@ -6,249 +6,242 @@
     <title>VenoSense Technology - Advanced AI-Powered DVT Detection System</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Discover VenoSense's breakthrough technology combining ultrasound imaging and AI for early, accurate DVT detection. Learn about our automated system's features and benefits.">
-    <meta name="keywords" content="VenoSense technology, DVT detection system, AI ultrasound, deep vein thrombosis diagnosis, healthcare AI, medical technology innovation">
-    <meta name="author" content="VenoSense Team">
+    <meta name="description" content="Discover VenoSense's breakthrough technology combining ultrasound imaging and AI for early, accurate DVT detection.">
+    <meta name="keywords" content="VenoSense technology, DVT detection system, AI ultrasound, deep vein thrombosis diagnosis">
     
     <!-- Open Graph / Social Media -->
     <meta property="og:title" content="VenoSense Technology - Advanced DVT Detection">
-    <meta property="og:description" content="Breakthrough AI-powered ultrasound technology for rapid, accurate deep vein thrombosis detection.">
+    <meta property="og:description" content="Breakthrough AI-powered ultrasound technology for deep vein thrombosis detection.">
     <meta property="og:image" content="assets/images/og-image.jpg">
     <meta property="og:url" content="https://venosense.org/technology">
-    <meta property="og:type" content="website">
     
     <!-- Stylesheets -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/technology.css">
     
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.ico">
 </head>
 <body>
-    <header>
-        <div class="container header-container">
-            <div class="logo-container">
-                <a href="index.html">
-                    <img src="assets/images/Logo.png" alt="VenoSense Logo" class="logo">
-                </a>
-            </div>
+    <!-- Site Header -->
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a href="index.html" class="site-header__logo">
+                <img src="assets/images/Logo.png" alt="VenoSense Logo">
+            </a>
             
-            <button id="menu-toggle" aria-label="Toggle Navigation">
-                <span class="menu-icon"></span>
+            <button class="site-header__menu-toggle" id="menu-toggle" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
             
-            <nav aria-label="Main Navigation">
-                <div id="nav-menu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="technology.html" class="active">Technology</a></li>
-                        <li><a href="workflow.html">Workflow</a></li>
-                        <li><a href="risk-factors.html">Risk Factors</a></li>
-                        <li><a href="competition.html">Competition</a></li>
-                        <li><a href="team.html">Team</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
+            <nav class="site-nav" id="site-nav">
+                <ul class="site-nav__menu">
+                    <li><a href="index.html" class="site-nav__link">Home</a></li>
+                    <li><a href="technology.html" class="site-nav__link active">Technology</a></li>
+                    <li><a href="workflow.html" class="site-nav__link">Workflow</a></li>
+                    <li><a href="team.html" class="site-nav__link">Team</a></li>
+                    <li><a href="contact.html" class="site-nav__link">Contact</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section class="tech-hero">
-            <div class="container">
-                <div class="tech-hero-content">
-                    <h1>Revolutionary DVT Detection Technology</h1>
-                    <p class="lead">Combining advanced ultrasound imaging with artificial intelligence for unparalleled accuracy and efficiency</p>
-                </div>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container page-header__content">
+                <h1>Revolutionary DVT Detection Technology</h1>
+                <p>Combining advanced ultrasound imaging with artificial intelligence for unparalleled accuracy and efficiency</p>
             </div>
         </section>
         
-        <!-- Technology Overview Section -->
-        <section class="tech-overview section">
+        <!-- Technology Overview -->
+        <section class="section">
             <div class="container">
-                <div class="section-header">
+                <div class="text-center">
                     <h2>How VenoSense Works</h2>
                     <p class="subtitle">A breakthrough approach to DVT detection</p>
                 </div>
                 
-                <div class="tech-overview-grid">
-                    <div class="tech-overview-content">
+                <div class="tech-overview">
+                    <div class="tech-overview__content">
                         <p>
                             The VenoSense system employs a proprietary combination of hardware and software technologies to revolutionize DVT detection. At its core is a Doppler-based automated probe mounted on a precision-controlled motorized platform with secure patient attachment.
                         </p>
                         <p>
                             What sets VenoSense apart is its ability to systematically capture high-quality ultrasound images without the need for specialized operator expertise. The system's neural network-based algorithms then analyze these images in real-time to detect abnormalities in blood flow and vessel compressibility—key indicators of potential clot formation.
                         </p>
-                        <div class="tech-highlights">
-                            <div class="highlight-item">
-                                <div class="highlight-icon">
-                                    <img src="assets/images/icons/automation.svg" alt="Automation Icon">
-                                </div>
-                                <div class="highlight-text">
-                                    <h3>Automated Scanning</h3>
-                                    <p>Precision-controlled motorized probe movement ensures consistent, thorough examination.</p>
-                                </div>
-                            </div>
-                            <div class="highlight-item">
-                                <div class="highlight-icon">
-                                    <img src="assets/images/icons/ai.svg" alt="AI Icon">
-                                </div>
-                                <div class="highlight-text">
-                                    <h3>Intelligent Analysis</h3>
-                                    <p>Advanced neural networks trained on thousands of DVT cases for optimal detection accuracy.</p>
-                                </div>
-                            </div>
-                            <div class="highlight-item">
-                                <div class="highlight-icon">
-                                    <img src="assets/images/icons/realtime.svg" alt="Real-time Icon">
-                                </div>
-                                <div class="highlight-text">
-                                    <h3>Real-time Results</h3>
-                                    <p>Immediate analysis and reporting for faster clinical decision-making.</p>
-                                </div>
-                            </div>
+                    </div>
+                    
+                    <div class="tech-overview__image">
+                        <img src="assets/images/Hardware Overview.png" alt="VenoSense Hardware Overview" class="tech-overview__img hardware-image">
+                        <p class="tech-overview__caption">VenoSense system with automated scanning capabilities</p>
+                    </div>
+                </div>
+                
+                <div class="tech-highlights">
+                    <div class="tech-highlight">
+                        <div class="tech-highlight__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                        </div>
+                        <div class="tech-highlight__content">
+                            <h3>Automated Scanning</h3>
+                            <p>Precision-controlled motorized probe movement ensures consistent, thorough examination.</p>
                         </div>
                     </div>
-                    <div class="tech-overview-image">
-                        <img src="assets/images/Hardware Overview.png" alt="VenoSense Hardware Overview" class="rounded-image">
-                        <p class="image-caption">VenoSense system with automated scanning capabilities</p>
+                    
+                    <div class="tech-highlight">
+                        <div class="tech-highlight__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <div class="tech-highlight__content">
+                            <h3>Intelligent Analysis</h3>
+                            <p>Advanced neural networks trained on thousands of DVT cases for optimal detection accuracy.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-highlight">
+                        <div class="tech-highlight__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <div class="tech-highlight__content">
+                            <h3>Real-time Results</h3>
+                            <p>Immediate analysis and reporting for faster clinical decision-making.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         
-        <!-- Technology Components Section -->
-        <section class="tech-components section bg-light">
+        <!-- Technology Components -->
+        <section class="section bg-light">
             <div class="container">
-                <div class="section-header">
+                <div class="text-center">
                     <h2>Technology Components</h2>
                     <p class="subtitle">The integrated system behind VenoSense's innovation</p>
                 </div>
                 
-                <div class="component-tabs">
-                    <nav class="component-nav">
-                        <button class="component-tab active" data-target="hardware">Hardware</button>
-                        <button class="component-tab" data-target="software">Software</button>
-                        <button class="component-tab" data-target="ai">AI & Analytics</button>
-                        <button class="component-tab" data-target="connectivity">Connectivity</button>
-                    </nav>
-                    
-                    <div class="component-content active" id="hardware">
-                        <div class="component-grid">
-                            <div class="component-image">
-                                <img src="assets/images/Hardware Overview.png" alt="VenoSense Hardware Components" class="rounded-image">
-                            </div>
-                            <div class="component-details">
-                                <h3>Advanced Hardware Design</h3>
-                                <p>VenoSense's hardware platform consists of several key components working in harmony:</p>
-                                <ul class="feature-list">
-                                    <li>
-                                        <strong>High-resolution Doppler probe</strong>: Custom-designed ultrasound transducer with 5-12 MHz frequency range optimized for vascular imaging
-                                    </li>
-                                    <li>
-                                        <strong>Precision motorized platform</strong>: Computer-controlled positioning system allowing for systematic scanning with 0.1mm positioning accuracy
-                                    </li>
-                                    <li>
-                                        <strong>Ergonomic clamp mechanism</strong>: Specially designed attachment ensuring stable positioning and patient comfort during scanning
-                                    </li>
-                                    <li>
-                                        <strong>Integrated processing unit</strong>: Compact, high-performance computing platform for real-time image processing and AI analysis
-                                    </li>
-                                    <li>
-                                        <strong>Touch interface</strong>: Intuitive 10.1" HD display for operation control and real-time visualization
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                <div class="tech-tabs">
+                    <div class="tech-tabs__nav" id="tech-tabs-nav">
+                        <button class="tech-tabs__button active" data-tab="hardware">Hardware</button>
+                        <button class="tech-tabs__button" data-tab="software">Software</button>
+                        <button class="tech-tabs__button" data-tab="ai">AI & Analytics</button>
+                        <button class="tech-tabs__button" data-tab="connectivity">Connectivity</button>
                     </div>
                     
-                    <div class="component-content" id="software">
-                        <div class="component-grid">
-                            <div class="component-details">
-                                <h3>Intelligent Software Platform</h3>
-                                <p>Our proprietary software architecture forms the backbone of the VenoSense system:</p>
-                                <ul class="feature-list">
-                                    <li>
-                                        <strong>VenoOS™ operating system</strong>: Purpose-built software environment optimized for ultrasound acquisition and analysis
-                                    </li>
-                                    <li>
-                                        <strong>Advanced image processing</strong>: Real-time enhancement algorithms that improve vessel visualization and blood flow dynamics
-                                    </li>
-                                    <li>
-                                        <strong>Automated scanning protocols</strong>: Standardized examination procedures ensuring comprehensive vascular assessment
-                                    </li>
-                                    <li>
-                                        <strong>Clinical workflow integration</strong>: Seamless connectivity with hospital information systems and electronic health records
-                                    </li>
-                                    <li>
-                                        <strong>User-centric interface</strong>: Intuitive design requiring minimal training and supporting guided operation
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="component-image">
-                                <img src="assets/images/dvtwebs.png" alt="VenoSense Software Interface" class="rounded-image">
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="component-content" id="ai">
-                        <div class="component-grid">
-                            <div class="component-image">
-                                <img src="assets/images/dvtwebs.png" alt="VenoSense AI Analytics" class="rounded-image">
-                            </div>
-                            <div class="component-details">
-                                <h3>Advanced AI & Analytics</h3>
-                                <p>At the heart of VenoSense is our proprietary AI technology:</p>
-                                <ul class="feature-list">
-                                    <li>
-                                        <strong>VenoNet™ neural architecture</strong>: Custom-developed convolutional neural network trained on over 50,000 clinical ultrasound images
-                                    </li>
-                                    <li>
-                                        <strong>Real-time blood flow analysis</strong>: Automated detection of abnormal flow patterns indicative of venous obstruction
-                                    </li>
-                                    <li>
-                                        <strong>Vessel compressibility assessment</strong>: AI-driven measurement of vein response to pressure, a key diagnostic indicator
-                                    </li>
-                                    <li>
-                                        <strong>Continuous learning system</strong>: Algorithm refinement through federated learning across deployed devices (with appropriate privacy controls)
-                                    </li>
-                                    <li>
-                                        <strong>Explainable AI features</strong>: Transparency tools that help clinicians understand the basis for detection results
-                                    </li>
-                                </ul>
+                    <div class="tech-tabs__content">
+                        <div class="tech-tab active" id="hardware">
+                            <div class="tech-component">
+                                <div class="tech-component__image">
+                                    <img src="assets/images/Hardware Overview.png" alt="VenoSense Hardware Components" class="hardware-image">
+                                </div>
+                                <div class="tech-component__details">
+                                    <h3>Advanced Hardware Design</h3>
+                                    <p>VenoSense's hardware platform consists of several key components working in harmony:</p>
+                                    <ul class="feature-list">
+                                        <li>
+                                            <strong>High-resolution Doppler probe</strong>: Custom-designed ultrasound transducer with 5-12 MHz frequency range optimized for vascular imaging
+                                        </li>
+                                        <li>
+                                            <strong>Precision motorized platform</strong>: Computer-controlled positioning system allowing for systematic scanning with 0.1mm positioning accuracy
+                                        </li>
+                                        <li>
+                                            <strong>Ergonomic clamp mechanism</strong>: Specially designed attachment ensuring stable positioning and patient comfort during scanning
+                                        </li>
+                                        <li>
+                                            <strong>Integrated processing unit</strong>: Compact, high-performance computing platform for real-time image processing and AI analysis
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div class="component-content" id="connectivity">
-                        <div class="component-grid">
-                            <div class="component-details">
-                                <h3>Seamless Connectivity</h3>
-                                <p>VenoSense is designed for integration into modern healthcare environments:</p>
-                                <ul class="feature-list">
-                                    <li>
-                                        <strong>DICOM compatibility</strong>: Industry-standard medical imaging format for seamless integration with PACS systems
-                                    </li>
-                                    <li>
-                                        <strong>HL7/FHIR support</strong>: Structured data exchange with electronic health records and hospital information systems
-                                    </li>
-                                    <li>
-                                        <strong>Secure cloud reporting</strong>: Optional encrypted cloud storage for results access from anywhere
-                                    </li>
-                                    <li>
-                                        <strong>Remote monitoring capabilities</strong>: Optional telemedicine integration for remote specialist review
-                                    </li>
-                                    <li>
-                                        <strong>API integration</strong>: Developer tools for custom integration with existing clinical systems
-                                    </li>
-                                </ul>
+                        
+                        <div class="tech-tab" id="software">
+                            <div class="tech-component">
+                                <div class="tech-component__details">
+                                    <h3>Intelligent Software Platform</h3>
+                                    <p>Our proprietary software architecture forms the backbone of the VenoSense system:</p>
+                                    <ul class="feature-list">
+                                        <li>
+                                            <strong>VenoOS™ operating system</strong>: Purpose-built software environment optimized for ultrasound acquisition and analysis
+                                        </li>
+                                        <li>
+                                            <strong>Advanced image processing</strong>: Real-time enhancement algorithms that improve vessel visualization and blood flow dynamics
+                                        </li>
+                                        <li>
+                                            <strong>Automated scanning protocols</strong>: Standardized examination procedures ensuring comprehensive vascular assessment
+                                        </li>
+                                        <li>
+                                            <strong>Clinical workflow integration</strong>: Seamless connectivity with hospital information systems and electronic health records
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tech-component__image">
+                                    <img src="assets/images/dvtwebs.png" alt="VenoSense Software Interface">
+                                </div>
                             </div>
-                            <div class="component-image">
-                                <img src="assets/images/Workflow.png" alt="VenoSense Connectivity" class="rounded-image">
+                        </div>
+                        
+                        <div class="tech-tab" id="ai">
+                            <div class="tech-component">
+                                <div class="tech-component__image">
+                                    <img src="assets/images/dvtwebs.png" alt="VenoSense AI Analytics">
+                                </div>
+                                <div class="tech-component__details">
+                                    <h3>Advanced AI & Analytics</h3>
+                                    <p>At the heart of VenoSense is our proprietary AI technology:</p>
+                                    <ul class="feature-list">
+                                        <li>
+                                            <strong>VenoNet™ neural architecture</strong>: Custom-developed convolutional neural network trained on over 50,000 clinical ultrasound images
+                                        </li>
+                                        <li>
+                                            <strong>Real-time blood flow analysis</strong>: Automated detection of abnormal flow patterns indicative of venous obstruction
+                                        </li>
+                                        <li>
+                                            <strong>Vessel compressibility assessment</strong>: AI-driven measurement of vein response to pressure, a key diagnostic indicator
+                                        </li>
+                                        <li>
+                                            <strong>Continuous learning system</strong>: Algorithm refinement through federated learning across deployed devices
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-tab" id="connectivity">
+                            <div class="tech-component">
+                                <div class="tech-component__details">
+                                    <h3>Seamless Connectivity</h3>
+                                    <p>VenoSense is designed for integration into modern healthcare environments:</p>
+                                    <ul class="feature-list">
+                                        <li>
+                                            <strong>DICOM compatibility</strong>: Industry-standard medical imaging format for seamless integration with PACS systems
+                                        </li>
+                                        <li>
+                                            <strong>HL7/FHIR support</strong>: Structured data exchange with electronic health records and hospital information systems
+                                        </li>
+                                        <li>
+                                            <strong>Secure cloud reporting</strong>: Optional encrypted cloud storage for results access from anywhere
+                                        </li>
+                                        <li>
+                                            <strong>Remote monitoring capabilities</strong>: Optional telemedicine integration for remote specialist review
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tech-component__image">
+                                    <img src="assets/images/Workflow.png" alt="VenoSense Connectivity">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -257,9 +250,9 @@
         </section>
         
         <!-- Technical Specifications -->
-        <section class="tech-specs section">
+        <section class="section">
             <div class="container">
-                <div class="section-header">
+                <div class="text-center">
                     <h2>Technical Specifications</h2>
                     <p class="subtitle">The numbers behind VenoSense's capabilities</p>
                 </div>
@@ -271,7 +264,7 @@
                             <li><strong>Dimensions:</strong> 32cm × 24cm × 12cm</li>
                             <li><strong>Weight:</strong> 2.4 kg (5.3 lbs)</li>
                             <li><strong>Display:</strong> 10.1" HD touchscreen</li>
-                            <li><strong>Battery:</strong> 6+ hours continuous operation</li>
+                            <li><strong>Battery:</strong> 6+ hours operation</li>
                             <li><strong>Charging:</strong> USB-C PD, 65W</li>
                         </ul>
                     </div>
@@ -282,7 +275,7 @@
                             <li><strong>Probe Type:</strong> Linear array transducer</li>
                             <li><strong>Frequency Range:</strong> 5-12 MHz</li>
                             <li><strong>Scanning Depth:</strong> 2-8 cm</li>
-                            <li><strong>Modes:</strong> B-Mode, Color Doppler, Power Doppler</li>
+                            <li><strong>Modes:</strong> B-Mode, Color Doppler</li>
                             <li><strong>Frame Rate:</strong> Up to 60 fps</li>
                         </ul>
                     </div>
@@ -304,7 +297,7 @@
                         <ul>
                             <li><strong>Wireless:</strong> Wi-Fi 6, Bluetooth 5.2</li>
                             <li><strong>Wired:</strong> Ethernet, USB 3.1</li>
-                            <li><strong>Data Export:</strong> DICOM, PDF, JPG/PNG</li>
+                            <li><strong>Data Export:</strong> DICOM, PDF, JPG</li>
                             <li><strong>Integration:</strong> HL7, FHIR, API</li>
                             <li><strong>Security:</strong> HIPAA compliant, AES-256</li>
                         </ul>
@@ -313,174 +306,59 @@
             </div>
         </section>
         
-        <!-- Comparison Section -->
-        <section class="comparison-section section bg-light">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Advancing the Standard of Care</h2>
-                    <p class="subtitle">How VenoSense compares to traditional DVT detection methods</p>
-                </div>
-                
-                <div class="comparison-table-container">
-                    <table class="comparison-table">
-                        <thead>
-                            <tr>
-                                <th>Feature</th>
-                                <th>VenoSense</th>
-                                <th>Traditional Ultrasound</th>
-                                <th>D-dimer Blood Test</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Operator Skill Required</td>
-                                <td><span class="highlight positive">Minimal</span></td>
-                                <td>Specialized Training</td>
-                                <td>Phlebotomy Skills</td>
-                            </tr>
-                            <tr>
-                                <td>Time to Result</td>
-                                <td><span class="highlight positive">~10 minutes</span></td>
-                                <td>30-45 minutes</td>
-                                <td>1-4 hours</td>
-                            </tr>
-                            <tr>
-                                <td>Diagnostic Accuracy</td>
-                                <td><span class="highlight positive">95%+</span></td>
-                                <td>90-95%</td>
-                                <td>High sensitivity, low specificity</td>
-                            </tr>
-                            <tr>
-                                <td>Consistency Between Operators</td>
-                                <td><span class="highlight positive">High</span></td>
-                                <td>Variable</td>
-                                <td>Consistent</td>
-                            </tr>
-                            <tr>
-                                <td>Point-of-Care Capability</td>
-                                <td><span class="highlight positive">Yes</span></td>
-                                <td>Limited</td>
-                                <td>No</td>
-                            </tr>
-                            <tr>
-                                <td>Invasiveness</td>
-                                <td><span class="highlight positive">Non-invasive</span></td>
-                                <td>Non-invasive</td>
-                                <td>Invasive (blood draw)</td>
-                            </tr>
-                            <tr>
-                                <td>False Positive Rate</td>
-                                <td><span class="highlight positive">~5%</span></td>
-                                <td>~8%</td>
-                                <td>~40%</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Research & Validation -->
-        <section class="research-section section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Research & Validation</h2>
-                    <p class="subtitle">Scientific foundation and clinical evidence</p>
-                </div>
-                
-                <div class="research-content">
-                    <p class="research-intro">
-                        VenoSense technology is built on a solid foundation of scientific research and clinical validation. Our system has been developed in collaboration with leading vascular specialists and has undergone rigorous testing to ensure its accuracy and reliability.
-                    </p>
-                    
-                    <div class="research-grid">
-                        <div class="research-card">
-                            <h3>Clinical Validation</h3>
-                            <p>Our multi-center clinical study involving 750 patients demonstrated:</p>
-                            <ul>
-                                <li>95.7% sensitivity for proximal DVT detection</li>
-                                <li>94.2% specificity compared to expert-performed ultrasound</li>
-                                <li>Significant time savings averaging 28 minutes per examination</li>
-                            </ul>
-                            <p class="study-reference">Publication pending in the Journal of Vascular Surgery</p>
-                        </div>
-                        
-                        <div class="research-card">
-                            <h3>Algorithm Development</h3>
-                            <p>The VenoNet™ AI system was trained and validated on:</p>
-                            <ul>
-                                <li>Over 50,000 annotated ultrasound images</li>
-                                <li>Data from diverse patient populations</li>
-                                <li>Multiple vascular conditions beyond DVT</li>
-                            </ul>
-                            <p class="study-reference">Technical details published in Medical Image Analysis, 2024</p>
-                        </div>
-                    </div>
-                    
-                    <div class="research-partners">
-                        <h3>Research Collaborations</h3>
-                        <div class="partners-logos">
-                            <img src="assets/images/partner-university.png" alt="University Medical Center">
-                            <img src="assets/images/partner-hospital.png" alt="Regional Hospital">
-                            <img src="assets/images/partner-institute.png" alt="Medical Research Institute">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
         <!-- CTA Section -->
         <section class="cta-section">
             <div class="container">
-                <div class="cta-content">
+                <div class="cta-content text-center">
                     <h2>Experience VenoSense Technology</h2>
                     <p>Ready to see how VenoSense can transform DVT detection in your clinical setting?</p>
                     <div class="cta-buttons">
-                        <a href="workflow.html" class="btn btn-primary">Explore Clinical Workflow</a>
-                        <a href="contact.html" class="btn btn-secondary">Request a Demo</a>
+                        <a href="workflow.html" class="btn btn--primary">Explore Clinical Workflow</a>
+                        <a href="contact.html" class="btn btn--secondary">Request a Demo</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
     
-    <footer>
+    <!-- Site Footer -->
+    <footer class="site-footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <img src="assets/images/Logo.png" alt="VenoSense Logo" class="footer-logo">
+            <div class="site-footer__grid">
+                <div class="site-footer__brand">
+                    <img src="assets/images/Logo.png" alt="VenoSense Logo" class="site-footer__logo">
                     <p>Revolutionizing vascular health monitoring with AI-powered ultrasound technology.</p>
                 </div>
                 
-                <div class="footer-nav">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="technology.html">Technology</a></li>
-                        <li><a href="workflow.html">Workflow</a></li>
-                        <li><a href="risk-factors.html">Risk Factors</a></li>
-                        <li><a href="competition.html">Competition</a></li>
-                        <li><a href="team.html">Team</a></li>
+                <div class="site-footer__nav">
+                    <h3>Quick Links</h3>
+                    <ul class="site-footer__menu">
+                        <li><a href="index.html" class="site-footer__link">Home</a></li>
+                        <li><a href="technology.html" class="site-footer__link">Technology</a></li>
+                        <li><a href="workflow.html" class="site-footer__link">Workflow</a></li>
+                        <li><a href="team.html" class="site-footer__link">Team</a></li>
+                        <li><a href="contact.html" class="site-footer__link">Contact</a></li>
                     </ul>
                 </div>
                 
-                <div class="footer-contact">
-                    <h4>Contact Us</h4>
-                    <p>Email: <a href="mailto:contact@venosense.org">contact@venosense.org</a></p>
-                    <a href="contact.html" class="btn btn-outline">Contact Form</a>
+                <div class="site-footer__contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: <a href="mailto:contact@venosense.org" class="site-footer__link">contact@venosense.org</a></p>
+                    <a href="contact.html" class="btn btn--outline">Contact Form</a>
                 </div>
             </div>
             
-            <div class="footer-bottom">
-                <p>&copy; 2025 VenoSense. All rights reserved.</p>
-                <div class="footer-social">
+            <div class="site-footer__bottom">
+                <p>&copy; <span id="current-year">2023</span> VenoSense. All rights reserved.</p>
+                
+                <div class="site-footer__social">
                     <a href="#" aria-label="LinkedIn" class="social-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
                         </svg>
                     </a>
                     <a href="#" aria-label="Twitter" class="social-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
                         </svg>
                     </a>
@@ -489,7 +367,37 @@
         </div>
     </footer>
     
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/technology.js"></script>
+    <script>
+        // Update copyright year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const siteNav = document.getElementById('site-nav');
+        
+        menuToggle.addEventListener('click', function() {
+            menuToggle.classList.toggle('open');
+            siteNav.classList.toggle('show');
+        });
+        
+        // Tab functionality
+        const tabButtons = document.querySelectorAll('.tech-tabs__button');
+        const tabContents = document.querySelectorAll('.tech-tab');
+        
+        tabButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons and contents
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+                
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                // Show corresponding content
+                const target = this.getAttribute('data-tab');
+                document.getElementById(target).classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>
