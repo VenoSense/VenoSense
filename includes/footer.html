@@ -2,19 +2,13 @@
     <div class="container">
         <div class="footer-grid">
             <div class="footer-brand">
-                <img src="assets/images/Logo.png" alt="VenoSense Logo" class="footer-logo">
+                <img src="Assets/Logo.png" alt="VenoSense Logo" class="footer-logo">
                 <p>Revolutionizing vascular health monitoring with AI-powered ultrasound technology.</p>
             </div>
             
             <div class="footer-nav">
                 <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="technology.html">Technology</a></li>
-                    <li><a href="workflow.html">Workflow</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+                <div id="footer-nav-placeholder"></div>
             </div>
             
             <div class="footer-contact">
@@ -25,7 +19,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; <span id="copyright-year">2025</span> VenoSense. All rights reserved.</p>
+            <p>&copy; <span id="current-year">2023</span> VenoSense. All rights reserved.</p>
             <div class="footer-social">
                 <a href="#" aria-label="LinkedIn" class="social-icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -41,3 +35,27 @@
         </div>
     </div>
 </footer>
+
+<script>
+    // Load navigation in footer
+    fetch('includes/nav.html')
+        .then(response => response.text())
+        .then(html => {
+            // Convert nav links to footer format
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+            const navItems = doc.querySelectorAll('nav ul li');
+            
+            let footerNavHTML = '<ul>';
+            navItems.forEach(item => {
+                const link = item.querySelector('a');
+                footerNavHTML += `<li>${link.outerHTML}</li>`;
+            });
+            footerNavHTML += '</ul>';
+            
+            document.getElementById('footer-nav-placeholder').innerHTML = footerNavHTML;
+        });
+        
+    // Set current year
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>

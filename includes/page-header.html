@@ -1,0 +1,28 @@
+<!-- 
+  Usage: Include this file and pass parameters using data attributes:
+  <div id="page-header" data-title="Page Title" data-description="Page description goes here"></div>
+-->
+<section class="page-header">
+    <div class="container">
+        <h1 id="page-title"></h1>
+        <p id="page-description"></p>
+    </div>
+</section>
+
+<script>
+    // Set page header content from data attributes
+    const pageHeaderElement = document.getElementById('page-header');
+    
+    if (pageHeaderElement) {
+        const title = pageHeaderElement.getAttribute('data-title');
+        const description = pageHeaderElement.getAttribute('data-description');
+        
+        if (title) {
+            document.getElementById('page-title').textContent = title;
+        }
+        
+        if (description) {
+            document.getElementById('page-description').textContent = description;
+        }
+    }
+</script>

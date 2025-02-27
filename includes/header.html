@@ -1,0 +1,40 @@
+<header>
+    <div class="container header-container">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="Assets/Logo.png" alt="VenoSense Logo" class="logo">
+            </a>
+        </div>
+        
+        <button id="menu-toggle" aria-label="Toggle Navigation">
+            <span class="menu-icon"></span>
+        </button>
+        
+        <div id="nav-menu">
+            <!-- Navigation will be inserted here -->
+            <div id="nav-placeholder"></div>
+        </div>
+    </div>
+</header>
+
+<script>
+    // Load navigation component
+    fetch('includes/nav.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('nav-placeholder').outerHTML = html;
+            highlightCurrentPage();
+        });
+        
+    function highlightCurrentPage() {
+        const currentPage = window.location.pathname.split('/').pop().replace('.html', '') || 'home';
+        const navLinks = document.querySelectorAll('nav a');
+        
+        navLinks.forEach(link => {
+            const linkPage = link.getAttribute('data-page');
+            if (linkPage === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    }
+</script>
