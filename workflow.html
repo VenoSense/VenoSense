@@ -9,85 +9,365 @@
     <meta name="description" content="Discover how VenoSense integrates into clinical workflows to streamline DVT detection with automated ultrasound and AI-powered analysis.">
     <meta name="keywords" content="VenoSense workflow, DVT detection process, automated ultrasound workflow, clinical DVT screening, Wells score calculation">
     
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="VenoSense Clinical Workflow">
+    <meta property="og:description" content="Streamlined DVT detection workflow with automated ultrasound and AI integration.">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    <meta property="og:url" content="https://venosense.org/workflow">
+    
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/page-header.css">
-    <link rel="stylesheet" href="css/workflow.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/workflow.css">
     
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.ico">
 </head>
 <body>
-    <!-- Header Component -->
-    <vs-header></vs-header>
-    
+    <!-- Site Header -->
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a href="index.html" class="site-header__logo">
+                <img src="assets/images/Logo.png" alt="VenoSense Logo">
+            </a>
+            
+            <button class="site-header__menu-toggle" id="menu-toggle" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav class="site-nav" id="site-nav">
+                <ul class="site-nav__menu">
+                    <li><a href="index.html" class="site-nav__link">Home</a></li>
+                    <li><a href="technology.html" class="site-nav__link">Technology</a></li>
+                    <li><a href="workflow.html" class="site-nav__link active">Workflow</a></li>
+                    <li><a href="team.html" class="site-nav__link">Team</a></li>
+                    <li><a href="contact.html" class="site-nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     <main>
-        <!-- Page Header Component -->
-        <vs-page-header
-            data-title="Clinical Workflow Integration"
-            data-description="Simple, efficient, and integrated DVT detection process">
-        </vs-page-header>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container page-header__content">
+                <h1>Clinical Workflow Integration</h1>
+                <p>Simple, efficient, and integrated DVT detection process</p>
+            </div>
+        </section>
         
-        <!-- Workflow Content -->
-        <section class="workflow-overview section">
+        <!-- Workflow Overview -->
+        <section class="section">
             <div class="container">
-                <div class="overview-grid">
-                    <div class="overview-content">
-                        <h2>Streamlining DVT Assessment</h2>
+                <div class="text-center">
+                    <h2>Streamlined DVT Assessment</h2>
+                    <p class="subtitle">Enhancing clinical efficiency without compromising accuracy</p>
+                </div>
+                
+                <div class="workflow-overview">
+                    <div class="workflow-overview__content">
                         <p>
                             VenoSense integrates seamlessly into the DVT diagnostic workflow, providing an automated and efficient solution for clinicians. Our system is designed to complement existing protocols while reducing the time, expertise, and resources required for accurate assessment.
                         </p>
                         <p>
                             By automating both the ultrasound procedure and the Wells score calculation, VenoSense reduces variability and improves accuracy while making DVT screening more accessible across different healthcare settings.
                         </p>
+                        
+                        <div class="workflow-benefits">
+                            <div class="workflow-benefit">
+                                <div class="workflow-benefit__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
+                                <div class="workflow-benefit__content">
+                                    <h3>Reduces Examination Time</h3>
+                                    <p>Complete DVT assessment in 10 minutes versus 30-45 minutes with traditional methods</p>
+                                </div>
+                            </div>
+                            
+                            <div class="workflow-benefit">
+                                <div class="workflow-benefit__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
+                                <div class="workflow-benefit__content">
+                                    <h3>Ensures Consistency</h3>
+                                    <p>Standardized scanning protocol eliminates operator-dependent variations</p>
+                                </div>
+                            </div>
+                            
+                            <div class="workflow-benefit">
+                                <div class="workflow-benefit__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                    </svg>
+                                </div>
+                                <div class="workflow-benefit__content">
+                                    <h3>Automated Documentation</h3>
+                                    <p>Generates comprehensive reports and maintains digital records for seamless integration with EMR</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="overview-image">
-                        <img src="Assets/Workflow.png" alt="VenoSense Workflow Overview" class="workflow-img">
+                    <div class="workflow-overview__image">
+                        <img src="assets/images/Workflow.png" alt="VenoSense Workflow Overview" class="workflow-img">
                     </div>
                 </div>
             </div>
         </section>
-
-        <div class="workflow-step">
-            <div class="step-number">2</div>
-            <div class="step-content">
-                <h3>Automated Ultrasound Scan</h3>
-                <p>The VenoSense device is positioned on the patient's leg and initiates automated scanning of key venous segments.</p>
-                <div class="step-image">
-                    <img src="Assets/Hardware Overview.png" alt="Automated Ultrasound Scan">
+        
+        <!-- Step by Step Process -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Step-by-Step Process</h2>
+                    <p class="subtitle">How VenoSense streamlines DVT detection from start to finish</p>
+                </div>
+                
+                <div class="workflow-steps">
+                    <div class="workflow-step">
+                        <div class="workflow-step__number">1</div>
+                        <div class="workflow-step__content">
+                            <h3>Patient Information & Risk Assessment</h3>
+                            <p>Input basic patient information and answer clinical questions for initial Wells score assessment to determine pre-test probability of DVT.</p>
+                            <div class="workflow-step__image">
+                                <img src="assets/images/Workflow.png" alt="Patient Assessment">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="workflow-step">
+                        <div class="workflow-step__number">2</div>
+                        <div class="workflow-step__content">
+                            <h3>Device Positioning & Setup</h3>
+                            <p>The VenoSense device is positioned on the patient's leg using the ergonomic attachment system, ensuring proper alignment for the automated scan.</p>
+                            <div class="workflow-step__image">
+                                <img src="assets/images/Hardware Overview.png" alt="Device Positioning" class="hardware-image">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="workflow-step">
+                        <div class="workflow-step__number">3</div>
+                        <div class="workflow-step__content">
+                            <h3>Automated Ultrasound Scan</h3>
+                            <p>The system automatically performs a comprehensive venous ultrasound examination, capturing images at standardized locations along the lower extremity veins.</p>
+                            <div class="workflow-step__image">
+                                <img src="assets/images/dvtwebs.png" alt="Automated Scan">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="workflow-step">
+                        <div class="workflow-step__number">4</div>
+                        <div class="workflow-step__content">
+                            <h3>AI-Powered Image Analysis</h3>
+                            <p>VenoSense's proprietary algorithm analyzes the captured images in real-time, identifying venous obstruction, abnormal compressibility, and other DVT indicators.</p>
+                            <div class="workflow-step__image">
+                                <img src="assets/images/dvtwebs.png" alt="Image Analysis">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="workflow-step">
+                        <div class="workflow-step__number">5</div>
+                        <div class="workflow-step__content">
+                            <h3>Results & Report Generation</h3>
+                            <p>The system generates a comprehensive report combining the Wells score assessment and ultrasound findings, with clear indication of DVT probability.</p>
+                            <div class="workflow-step__image">
+                                <img src="assets/images/Workflow.png" alt="Results Report">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="workflow-step">
-            <div class="step-number">3</div>
-            <div class="step-content">
-                <h3>Real-time Image Analysis</h3>
-                <p>AI algorithms process ultrasound images in real-time, identifying key vascular structures and potential abnormalities.</p>
-                <div class="step-image">
-                    <img src="Assets/dvtwebs.png" alt="Real-time Image Analysis">
+        </section>
+        
+        <!-- Clinical Integration Section -->
+        <section class="section">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Clinical Integration</h2>
+                    <p class="subtitle">Designed to complement existing healthcare workflows</p>
+                </div>
+                
+                <div class="clinical-integration">
+                    <div class="clinical-integration__image">
+                        <img src="assets/images/Hardware Overview.png" alt="VenoSense in Clinical Setting" class="hardware-image">
+                    </div>
+                    
+                    <div class="clinical-integration__content">
+                        <h3>Fitting into Your Clinical Practice</h3>
+                        <p>VenoSense has been designed with real-world clinical environments in mind. The system can be deployed in multiple settings:</p>
+                        
+                        <div class="settings-grid">
+                            <div class="setting-item">
+                                <h4>Emergency Departments</h4>
+                                <p>Quick triage and assessment of suspected DVT cases without waiting for ultrasound technicians</p>
+                            </div>
+                            
+                            <div class="setting-item">
+                                <h4>Primary Care Clinics</h4>
+                                <p>Enable on-site DVT screening capabilities without referral to specialized imaging centers</p>
+                            </div>
+                            
+                            <div class="setting-item">
+                                <h4>Vascular Clinics</h4>
+                                <p>Improve patient throughput by automating routine DVT examinations</p>
+                            </div>
+                            
+                            <div class="setting-item">
+                                <h4>Rural & Underserved Areas</h4>
+                                <p>Bring advanced DVT diagnostic capabilities to locations without specialized personnel</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="workflow-step">
-            <div class="step-number">4</div>
-            <div class="step-content">
-                <h3>Automated Wells Score Calculation</h3>
-                <p>The system combines clinical inputs and imaging findings to calculate an objective Wells Score for DVT risk stratification.</p>
-                <div class="step-image">
-                    <img src="Assets/Workflow.png" alt="Automated Wells Score Calculation">
+        </section>
+        
+        <!-- Wells Score Explanation -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Wells Score Integration</h2>
+                    <p class="subtitle">Evidence-based clinical decision support</p>
+                </div>
+                
+                <div class="wells-score">
+                    <div class="wells-score__content">
+                        <h3>Automated Clinical Assessment</h3>
+                        <p>
+                            The Wells Score is a clinically validated tool for assessing DVT probability. VenoSense digitizes and streamlines this process, combining clinical inputs with imaging findings for a comprehensive assessment.
+                        </p>
+                        
+                        <div class="wells-criteria">
+                            <h4>Integrated Wells Criteria:</h4>
+                            <ul>
+                                <li>Active cancer treatment</li>
+                                <li>Recent paralysis, paresis, or immobilization</li>
+                                <li>Recent bed rest or major surgery</li>
+                                <li>Localized tenderness along deep veins</li>
+                                <li>Entire leg swelling</li>
+                                <li>Calf swelling >3cm compared to asymptomatic leg</li>
+                                <li>Pitting edema in symptomatic leg</li>
+                                <li>Collateral superficial veins</li>
+                                <li>Previous DVT history</li>
+                                <li>Alternative diagnosis as likely as DVT</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="wells-score__image">
+                        <img src="assets/images/Workflow.png" alt="Wells Score Calculation Process" class="workflow-img">
+                        <p class="image-caption">VenoSense's integrated Wells Score calculation process</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Experience the VenoSense Difference</h2>
+                    <p>Interested in implementing VenoSense in your clinical practice?</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn--primary">Request a Demo</a>
+                        <a href="technology.html" class="btn btn--outline">Learn About Our Technology</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     
-    <!-- Footer Component -->
-    <vs-footer></vs-footer>
+    <!-- Site Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="site-footer__grid">
+                <div class="site-footer__brand">
+                    <img src="assets/images/Logo.png" alt="VenoSense Logo" class="site-footer__logo">
+                    <p>Revolutionizing vascular health monitoring with AI-powered ultrasound technology.</p>
+                </div>
+                
+                <div class="site-footer__nav">
+                    <h3>Quick Links</h3>
+                    <ul class="site-footer__menu">
+                        <li><a href="index.html" class="site-footer__link">Home</a></li>
+                        <li><a href="technology.html" class="site-footer__link">Technology</a></li>
+                        <li><a href="workflow.html" class="site-footer__link">Workflow</a></li>
+                        <li><a href="team.html" class="site-footer__link">Team</a></li>
+                        <li><a href="contact.html" class="site-footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="site-footer__contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: <a href="mailto:contact@venosense.org" class="site-footer__link">contact@venosense.org</a></p>
+                    <a href="contact.html" class="btn btn--outline">Contact Form</a>
+                </div>
+            </div>
+            
+            <div class="site-footer__bottom">
+                <p>&copy; <span id="current-year">2023</span> VenoSense. All rights reserved.</p>
+                
+                <div class="site-footer__social">
+                    <a href="#" aria-label="LinkedIn" class="social-icon">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Twitter" class="social-icon">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
     
-    <!-- Scripts -->
-    <script src="js/include-system.js"></script>
-    <script src="js/workflow.js"></script>
+    <script>
+        // Update copyright year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const siteNav = document.getElementById('site-nav');
+        
+        menuToggle.addEventListener('click', function() {
+            menuToggle.classList.toggle('open');
+            siteNav.classList.toggle('show');
+        });
+        
+        // Animate workflow steps on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const workflowSteps = document.querySelectorAll('.workflow-step');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-step');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.2,
+                rootMargin: '0px 0px -50px 0px'
+            });
+            
+            workflowSteps.forEach(step => {
+                step.classList.add('step-hidden');
+                observer.observe(step);
+            });
+        });
+    </script>
 </body>
 </html>
