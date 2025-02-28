@@ -81,6 +81,8 @@
     animation: float 6s ease-in-out infinite;
     transform-style: preserve-3d;
     perspective: 1000px;
+    object-fit: contain; /* Maintain aspect ratio */
+    max-height: 70vh; /* Limit height */
 }
 
 .hero-banner__wave {
@@ -95,6 +97,16 @@
 .hero-banner__wave svg {
     width: 100%;
     height: auto;
+}
+
+/* ===== HERO BANNER ADJUSTMENTS ===== */
+.hero-content-adjusted {
+    padding-top: var(--space-4); /* Reduced top padding to move content higher */
+    align-items: flex-start; /* Align items to top instead of center */
+}
+
+.hero-banner__content {
+    padding-top: var(--space-6); /* Add padding to the top of the content */
 }
 
 /* ===== MODERN FEATURES SECTION ===== */
@@ -184,10 +196,11 @@
 .enhanced-cta-section {
     background: linear-gradient(135deg, var(--primary), var(--secondary));
     color: var(--white);
-    padding: var(--space-12) 0;
+    padding: var(--space-10) 0; /* Slightly reduced padding */
     position: relative;
     overflow: hidden;
     margin-top: var(--space-10);
+    /* Removed any border-radius or wave-related styling for clean rectangular look */
 }
 
 .enhanced-cta-section__overlay {
@@ -255,12 +268,7 @@
 }
 
 .enhanced-cta-section__wave {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    line-height: 0;
-    z-index: 0;
+    display: none; /* Hide the wave element completely */
 }
 
 /* ===== PROBLEM SECTION ===== */
@@ -1000,6 +1008,11 @@
     .floating-device {
         max-width: 80%;
     }
+
+    .hero-content-adjusted {
+        padding-top: var(--space-4);
+        padding-bottom: var(--space-8);
+    }
 }
 
 @media (max-width: 768px) {
@@ -1063,6 +1076,10 @@
         width: 100%;
         max-width: 300px;
         margin: 0 auto;
+    }
+
+    .hero-banner__content {
+        padding-top: var(--space-2);
     }
 }
 

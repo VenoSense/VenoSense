@@ -229,14 +229,18 @@ a:hover {
 
 .site-header__inner {
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Changed from center to flex-start to pin logo to top */
   justify-content: space-between;
   height: 100%;
+  padding-top: var(--space-2); /* Added padding to create space at the top */
 }
 
 .site-header__logo {
   display: block;
   transition: transform var(--transition-fast);
+  position: relative; /* Added position relative */
+  top: var(--space-2); /* Position adjustment */
+  left: var(--space-2); /* Position adjustment */
 }
 
 .site-header__logo:hover {
@@ -244,8 +248,16 @@ a:hover {
 }
 
 .site-header__logo img {
-  height: 40px;
+  height: 60px; /* Increased from 40px (50% larger) */
   width: auto;
+}
+
+/* Adjust the navigation to accommodate the larger logo */
+.site-nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-top: var(--space-2); /* Add margin to align with larger logo */
 }
 
 .site-nav__menu {
@@ -638,6 +650,15 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
     gap: var(--space-4);
+  }
+  
+  .site-header__logo img {
+    height: 55px; /* Slightly smaller on mobile but still larger than original */
+  }
+  
+  .site-header__logo {
+    top: var(--space-1);
+    left: var(--space-1);
   }
 }
 
