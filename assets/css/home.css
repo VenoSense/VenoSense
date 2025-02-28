@@ -95,21 +95,27 @@
 }
 
 .hero-banner__image {
-    animation: fadeIn 2s ease-out;
+    animation: fadeIn 1.2s ease-out;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
 .floating-device {
     max-width: 100%;
     height: auto;
-    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.2));
-    animation: float 6s ease-in-out infinite;
-    transform-style: preserve-3d;
-    perspective: 1000px;
+    filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.2));
+    transform: perspective(1000px) rotateY(-8deg);
+    transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
     object-fit: contain; /* Maintain aspect ratio */
     max-height: 70vh; /* Limit height */
+    will-change: transform; /* Optimize for animation performance */
+}
+
+.hero-banner__image:hover .floating-device {
+    transform: perspective(1000px) rotateY(-4deg) scale(1.02);
 }
 
 .hero-banner__wave {
@@ -953,18 +959,11 @@
 @keyframes fadeIn {
     from {
         opacity: 0;
+        transform: translateX(30px) scale(0.95);
     }
     to {
         opacity: 1;
-    }
-}
-
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0) rotateY(-5deg);
-    }
-    50% {
-        transform: translateY(-20px) rotateY(5deg);
+        transform: translateX(0) scale(1);
     }
 }
 
@@ -1037,6 +1036,26 @@
     .hero-banner__title {
         text-align: center;
         margin-bottom: var(--space-3);
+    }
+
+    .hero-banner .container {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+    
+    .hero-banner__image {
+        order: -1;
+        margin-bottom: var(--space-4);
+    }
+    
+    .floating-device {
+        max-height: 40vh;
+        transform: perspective(1000px) rotateY(0deg);
+        filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.15));
+    }
+    
+    .hero-banner__image:hover .floating-device {
+        transform: perspective(1000px) rotateY(0deg) scale(1.02);
     }
 }
 
@@ -1131,6 +1150,15 @@
         background: linear-gradient(to right, var(--primary-light), var(--secondary-light));
         opacity: 0.5;
         border-radius: var(--radius-lg);
+    }
+
+    .hero-banner__image {
+        margin: 0 auto var(--space-6);
+        max-width: 80%;
+    }
+    
+    .floating-device {
+        max-height: 35vh;
     }
 
     .hero-banner .container {
