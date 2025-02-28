@@ -1,0 +1,32 @@
+# Properly serve CSS files with the correct MIME type
+AddType text/css .css
+AddType application/javascript .js
+AddType image/svg+xml .svg
+
+# Enable compression for faster loading
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+# Set caching headers for static assets
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+</IfModule>
+
+# Allow cross-origin requests for fonts if needed
+<IfModule mod_headers.c>
+  <FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2|font.css)$">
+    Header set Access-Control-Allow-Origin "*"
+  </FilesMatch>
+</IfModule>
+
+# Prevent directory browsing
+Options -Indexes
+
+# Redirect all 404s to index.html for SPA functionality if needed
+# ErrorDocument 404 /index.html
