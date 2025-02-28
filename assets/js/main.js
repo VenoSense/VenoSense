@@ -1,35 +1,45 @@
 /**
  * VenoSense - Main JavaScript
- * Handles common stuff 
+ * Handles common functionality across the website
  */
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Update copyright year
-    const yearElements = document.querySelectorAll('#current-year');
-    if (yearElements.length) {
-        yearElements.forEach(el => {
-            el.textContent = new Date().getFullYear();
-        });
+
+    function adjustHeroLayout() {
+        const heroSection = document.querySelector('.hero-banner');
+        const ctaButtons = document.querySelector('.hero-banner__cta');
+        const waveElement = document.querySelector('.hero-banner__wave');
+        
+        if (heroSection && ctaButtons && waveElement) {
+            // Make sure wave doesn't overlap with buttons
+            waveElement.style.pointerEvents = 'none';
+            
+            // Calculate and set proper bottom padding to ensure space below buttons
+            const ctaRect = ctaButtons.getBoundingClientRect();
+            const heroRect = heroSection.getBoundingClientRect();
+            const bottomSpace = heroRect.bottom - ctaRect.bottom;
+            
+            // If there's not enough space below the buttons, add more padding
+            if (bottomSpace < 40) {
+                const additionalPadding = 40 - bottomSpace;
+                heroSection.style.paddingBottom = `${Math.max(32, additionalPadding)}px`;
+            }
+        }
     }
     
-    // Mobile menu toggle
-    const menuToggle = document.getElementById('menu-toggle');
-    const siteNav = document.getElementById('site-nav');
+    // Run on load and on resize
+    adjustHeroLayout();
+    window.addEventListener('resize', adjustHeroLayout);
     
-    if (menuToggle && siteNav) {
-        menuToggle.addEventListener('click', function() {
-            menuToggle.classList.toggle('open');
-            siteNav.classList.toggle('show');
+    // Add touch tap highlight to improve mobile experience with buttons
+    const allButtons = document.querySelectorAll('.btn');
+    allButtons.forEach(button => {
+        button.addEventListener('touchstart', function() {
+            this.style.transform = 'scale(0.98)';
         });
-    }
-    
-    // Fix for hero buttons on mobile - ensure they're clickable
-    const heroButtons = document.querySelectorAll('.hero-banner__cta .btn');
-    if (heroButtons.length) {
-        heroButtons.forEach(button => {
-            button.addEventListener('touchstart', function() {
-                // This empty handler ensures touch events work properly
-            });
+        
+        button.addEventListener('touchend', function() {
+            this.style.transform = '';
         });
-    }
+    });
 });

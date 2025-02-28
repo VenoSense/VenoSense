@@ -6,7 +6,8 @@
 /* ===== HERO BANNER - NEW STANDOUT DESIGN ===== */
 .hero-banner {
     position: relative;
-    min-height: 90vh; /* Reduced from 100vh to make section smaller */
+    min-height: auto; /* Changed from 90vh to auto to better fit content */
+    padding: var(--space-6) 0 var(--space-8); /* Add padding top and bottom instead */
     color: var(--white);
     display: flex;
     align-items: center;
@@ -36,8 +37,8 @@
 }
 
 .hero-banner .container {
-    padding-top: var(--space-10);
-    padding-bottom: var(--space-10);
+    padding-top: var(--space-6); /* Reduced from space-10 */
+    padding-bottom: var(--space-6); /* Reduced from space-10 */
     position: relative;
     z-index: 1;
     display: grid;
@@ -69,6 +70,7 @@
     margin-top: var(--space-4); /* Add margin to separate from text */
     position: relative;
     z-index: 10; /* Ensure buttons are clickable */
+    padding-bottom: var(--space-4); /* Added padding below buttons for better clickable area */
 }
 
 .hero-banner__cta .btn {
@@ -1014,6 +1016,7 @@
 
     .hero-banner {
         min-height: 70vh; /* Further reduce height on tablet */
+        padding-bottom: var(--space-10); /* Extra padding on bottom at tablet size */
     }
     
     .hero-banner__content {
@@ -1089,6 +1092,7 @@
         width: 100%;
         max-width: 300px;
         margin: 0 auto;
+        padding-bottom: var(--space-6); /* More padding below buttons on mobile */
     }
 
     .hero-banner__content {
@@ -1098,6 +1102,7 @@
     .hero-banner {
         min-height: auto; /* Auto height on mobile */
         padding: var(--space-6) 0;
+        padding-bottom: var(--space-8); /* Adjusted padding at mobile size */
     }
     
     .solution-grid {
@@ -1117,6 +1122,11 @@
         background: linear-gradient(to right, var(--primary-light), var(--secondary-light));
         opacity: 0.5;
         border-radius: var(--radius-lg);
+    }
+
+    .hero-banner .container {
+        padding-top: var(--space-4); /* Less padding on top for mobile */
+        padding-bottom: var(--space-4);
     }
 }
 
