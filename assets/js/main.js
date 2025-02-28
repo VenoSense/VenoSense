@@ -4,16 +4,12 @@
  */
 
 document.addEventListener('DOMContentLoaded', function() {
-
+    // Adjust hero layout - modified to work without the wave
     function adjustHeroLayout() {
         const heroSection = document.querySelector('.hero-banner');
         const ctaButtons = document.querySelector('.hero-banner__cta');
-        const waveElement = document.querySelector('.hero-banner__wave');
         
-        if (heroSection && ctaButtons && waveElement) {
-            // Make sure wave doesn't overlap with buttons
-            waveElement.style.pointerEvents = 'none';
-            
+        if (heroSection && ctaButtons) {
             // Calculate and set proper bottom padding to ensure space below buttons
             const ctaRect = ctaButtons.getBoundingClientRect();
             const heroRect = heroSection.getBoundingClientRect();

@@ -7,11 +7,13 @@
 .hero-banner {
     position: relative;
     min-height: auto; /* Changed from 90vh to auto to better fit content */
-    padding: var(--space-6) 0 var(--space-8); /* Add padding top and bottom instead */
+    padding: var(--space-6) 0 var(--space-10); /* Increased bottom padding */
     color: var(--white);
     display: flex;
     align-items: center;
     overflow: hidden;
+    /* Adding clean edge at bottom instead of wave */
+    border-bottom: none;
 }
 
 .hero-banner__background {
@@ -38,7 +40,7 @@
 
 .hero-banner .container {
     padding-top: var(--space-6); /* Reduced from space-10 */
-    padding-bottom: var(--space-6); /* Reduced from space-10 */
+    padding-bottom: var(--space-8); /* Increase bottom padding of container */
     position: relative;
     z-index: 1;
     display: grid;
@@ -111,17 +113,24 @@
 }
 
 .hero-banner__wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    line-height: 0;
-    z-index: 1;
+    display: none; /* Hide the wave element completely */
 }
 
 .hero-banner__wave svg {
     width: 100%;
     height: auto;
+}
+
+/* Add smooth shadow to create subtle separation between sections */
+.hero-banner::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), transparent);
+    pointer-events: none;
 }
 
 /* ===== HERO BANNER ADJUSTMENTS ===== */
@@ -1016,7 +1025,7 @@
 
     .hero-banner {
         min-height: 70vh; /* Further reduce height on tablet */
-        padding-bottom: var(--space-10); /* Extra padding on bottom at tablet size */
+        padding-bottom: var(--space-8);
     }
     
     .hero-banner__content {
@@ -1102,7 +1111,7 @@
     .hero-banner {
         min-height: auto; /* Auto height on mobile */
         padding: var(--space-6) 0;
-        padding-bottom: var(--space-8); /* Adjusted padding at mobile size */
+        padding-bottom: var(--space-6);
     }
     
     .solution-grid {
