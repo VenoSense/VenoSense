@@ -6,7 +6,7 @@
 /* ===== HERO BANNER - NEW STANDOUT DESIGN ===== */
 .hero-banner {
     position: relative;
-    min-height: 100vh;
+    min-height: 90vh; /* Reduced from 100vh to make section smaller */
     color: var(--white);
     display: flex;
     align-items: center;
@@ -47,9 +47,10 @@
 }
 
 .hero-banner__title {
-    font-size: clamp(2.5rem, 7vw, 4.5rem);
+    text-align: left; /* Ensure text is left-aligned */
+    font-size: clamp(2.2rem, 6vw, 4rem); /* Slightly reduced size */
     line-height: 1.1;
-    margin-bottom: var(--space-4);
+    margin-bottom: var(--space-3); /* Reduced space below title */
     color: var(--white);
     animation: fadeInUp 1s ease-out;
 }
@@ -65,6 +66,28 @@
     display: flex;
     gap: var(--space-4);
     animation: fadeInUp 1s ease-out 0.6s backwards;
+    margin-top: var(--space-4); /* Add margin to separate from text */
+    position: relative;
+    z-index: 10; /* Ensure buttons are clickable */
+}
+
+.hero-banner__cta .btn {
+    position: relative;
+    z-index: 10;
+    min-width: 160px; /* Ensure buttons have minimum width */
+    text-align: center;
+}
+
+/* Fix the light button specifically */
+.hero-banner__cta .btn--light {
+    background-color: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+.hero-banner__cta .btn--light:hover {
+    background-color: var(--white);
+    color: var(--primary);
 }
 
 .hero-banner__image {
@@ -101,12 +124,14 @@
 
 /* ===== HERO BANNER ADJUSTMENTS ===== */
 .hero-content-adjusted {
-    padding-top: var(--space-4); /* Reduced top padding to move content higher */
+    padding-top: var(--space-2); /* Reduced top padding further */
     align-items: flex-start; /* Align items to top instead of center */
 }
 
 .hero-banner__content {
-    padding-top: var(--space-6); /* Add padding to the top of the content */
+    padding-top: var(--space-2); /* Reduced from var(--space-6) */
+    padding-right: var(--space-6); /* Add right padding */
+    max-width: 90%; /* Limit width to prevent text spreading too wide */
 }
 
 /* ===== MODERN FEATURES SECTION ===== */
@@ -149,11 +174,12 @@
     position: relative;
     z-index: 1;
     border: 4px solid rgba(159, 43, 43, 0.1);
+    overflow: visible; /* Ensure icon isn't cut off */
 }
 
 .feature-card-modern__icon svg {
-    width: 32px;
-    height: 32px;
+    width: 26px; /* Smaller icon to prevent cutoff */
+    height: 26px;
     color: var(--primary);
     transition: transform var(--transition-normal);
 }
@@ -369,7 +395,7 @@
 
 .solution-features li div p {
     margin-bottom: 0;
-    color: var(--gray-700);
+    color: var (--gray-700);
 }
 
 .solution-image img {
@@ -987,31 +1013,18 @@
     }
 
     .hero-banner {
-        min-height: auto;
+        min-height: 70vh; /* Further reduce height on tablet */
     }
     
-    .hero-banner .container {
-        grid-template-columns: 1fr;
+    .hero-banner__content {
+        padding-right: 0;
         text-align: center;
-        padding-top: var(--space-8);
-        padding-bottom: var(--space-12);
+        max-width: 100%;
     }
     
-    .hero-banner__image {
-        order: -1;
-    }
-    
-    .hero-banner__cta {
-        justify-content: center;
-    }
-    
-    .floating-device {
-        max-width: 80%;
-    }
-
-    .hero-content-adjusted {
-        padding-top: var(--space-4);
-        padding-bottom: var(--space-8);
+    .hero-banner__title {
+        text-align: center;
+        margin-bottom: var(--space-3);
     }
 }
 
@@ -1080,6 +1093,30 @@
 
     .hero-banner__content {
         padding-top: var(--space-2);
+    }
+
+    .hero-banner {
+        min-height: auto; /* Auto height on mobile */
+        padding: var(--space-6) 0;
+    }
+    
+    .solution-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Hide dvtwebs.png on mobile */
+    .solution-image img[src*="dvtwebs.png"] {
+        display: none;
+    }
+    
+    /* Show alternative content when image is hidden */
+    .solution-image::after {
+        content: "";
+        display: block;
+        height: 100px;
+        background: linear-gradient(to right, var(--primary-light), var(--secondary-light));
+        opacity: 0.5;
+        border-radius: var(--radius-lg);
     }
 }
 

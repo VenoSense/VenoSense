@@ -3,162 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VenoSense - AI-Powered Deep Vein Thrombosis Detection System</title>
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="VenoSense provides an innovative AI-powered ultrasound solution for early and accurate detection of deep vein thrombosis (DVT).">
-    <meta name="keywords" content="VenoSense, DVT detection, deep vein thrombosis, AI ultrasound, medical device, healthcare technology">
-    
-    <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="VenoSense - Revolutionary DVT Detection Technology">
-    <meta property="og:description" content="AI-powered ultrasound solution for early detection of deep vein thrombosis.">
-    <meta property="og:image" content="assets/images/og-image.jpg">
-    <meta property="og:url" content="https://venosense.org">
-    
-    <!-- Stylesheets -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/home.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="assets/images/favicon.ico">
+    <title>VenoSense - Revolutionizing DVT Detection</title>
+    <!-- SEO meta tags -->
+    <meta name="description" content="Discover VenoSense, the AI-powered ultrasound system transforming DVT detection. Share our innovative technology and help revolutionize vascular health monitoring.">
+    <meta name="keywords" content="VenoSense, DVT, deep vein thrombosis, ultrasound, AI, healthcare, brand awareness, viral landing page">
+    <link rel="canonical" href="https://yourdomain.com/">
+    <!-- Add Ubuntu font -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add JavaScript file -->
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Site Header -->
-    <header class="site-header">
-        <div class="container site-header__inner">
-            <a href="index.html" class="site-header__logo">
-                <img src="assets/images/Logo.png" alt="VenoSense Logo">
-            </a>
-            
-            <button class="site-header__menu-toggle" id="menu-toggle" aria-label="Toggle Navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            
-            <nav class="site-nav" id="site-nav">
-                <ul class="site-nav__menu">
-                    <li><a href="index.html" class="site-nav__link active">Home</a></li>
-                    <li><a href="technology.html" class="site-nav__link">Technology</a></li>
-                    <li><a href="workflow.html" class="site-nav__link">Workflow</a></li>
-                    <li><a href="team.html" class="site-nav__link">Team</a></li>
-                    <li><a href="contact.html" class="site-nav__link">Contact</a></li>
-                </ul>
-            </nav>
+    <header>
+        <div class="logo-container">
+            <img src="Assets/Logo.png" alt="VenoSense Logo" class="logo">
         </div>
+        <!-- Hamburger button for mobile -->
+        <button id="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
+        <nav aria-label="Main Navigation">
+            <div id="nav-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#technology">Technology</a></li>
+                    <li><a href="#workflow">Workflow</a></li>
+                    <li><a href="#risk">Risk Factors</a></li>
+                    <li><a href="#competition">Competition</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
-
     <main>
-        <!-- Hero Section - Updated with adjusted positioning -->
-        <section class="hero-banner">
-            <div class="hero-banner__background">
-                <div class="hero-banner__overlay"></div>
-            </div>
-            <div class="container hero-content-adjusted">
-                <div class="hero-banner__content">
-                    <h1 class="hero-banner__title">Revolutionizing DVT Detection</h1>
-                    <p class="hero-banner__subtitle">AI-Powered Ultrasound Technology for Early and Accurate Diagnosis of Deep Vein Thrombosis</p>
-                    <div class="hero-banner__cta">
-                        <a href="technology.html" class="btn btn--primary">Discover Our Technology</a>
-                        <a href="contact.html" class="btn btn--outline btn--light">Contact Us</a>
-                    </div>
-                </div>
-                <div class="hero-banner__image">
-                    <img src="assets/images/dopplertest.png" alt="VenoSense Doppler Test" class="floating-device">
+        <section id="landing">
+            <div class="splash-container">
+                <img src="Assets/Splash.svg" alt="Background Splash" class="splash-bg">
+                <div class="frost-overlay">
+                    <h1>Revolutionizing DVT Detection with AI-Powered Ultrasounds</h1>
                 </div>
             </div>
-            <div class="hero-banner__wave">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                    <path fill="#ffffff" fill-opacity="1" d="M0,128L48,133.3C96,139,192,149,288,144C384,139,480,117,576,122.7C672,128,768,160,864,165.3C960,171,1056,149,1152,133.3C1248,117,1344,107,1392,101.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-                </svg>
+            <div class="device-container">
+                <img src="Assets/dvtwebs.png" alt="VenoSense Device" class="device-image">
             </div>
         </section>
         
-        <!-- Problem Statement -->
-        <section class="section bg-light">
-            <div class="container">
-                <div class="text-center">
-                    <h2>The Problem We're Solving</h2>
-                    <p class="section-intro">Deep vein thrombosis affects up to 900,000 Americans each year, with 60,000-100,000 deaths attributed to pulmonary embolism resulting from DVT.</p>
-                </div>
-                
-                <div class="stat-cards">
-                    <div class="stat-card">
-                        <div class="stat-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                        </div>
-                        <h3>50%</h3>
-                        <p>of DVT cases are missed using current clinical assessment tools alone</p>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                            </svg>
-                        </div>
-                        <h3>30%</h3>
-                        <p>of hospitals face critical shortages of ultrasound technicians</p>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
-                            </svg>
-                        </div>
-                        <h3>$10B</h3>
-                        <p>annual cost of DVT treatment and complications in the United States</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <article id="home">
+            <h2>Welcome to VenoSense</h2>
+            <p>
+                VenoSense is an innovative, automated ultrasound system designed to detect deep vein thrombosis (DVT) early and efficiently using advanced non-invasive ultrasound technology combined with AI-driven image analysis. Our mission is to revolutionize vascular health monitoring, making DVT detection more accessible, affordable, and accurate.
+            </p>
+            <p>
+                With DVT affecting nearly 900,000 individuals annually in the U.S., early detection is crucial. VenoSense streamlines the diagnostic workflow, reduces reliance on specialized personnel, and aims to lower healthcare costs.
+            </p>
+        </article>
         
-        <!-- Solution Overview -->
-        <section class="section">
-            <div class="container">
-                <div class="solution-grid">
-                    <div class="solution-content">
-                        <h2>Our Solution</h2>
-                        <p>VenoSense combines cutting-edge ultrasound technology with artificial intelligence to revolutionize how DVT is detected and diagnosed.</p>
-                        <ul class="solution-features">
-                            <li>
-                                <span class="solution-icon">✓</span>
-                                <div>
-                                    <h3>Accessible</h3>
-                                    <p>Easy-to-use system requiring minimal technical expertise, making DVT screening available in more clinical settings</p>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="solution-icon">✓</span>
-                                <div>
-                                    <h3>Accurate</h3>
-                                    <p>AI-powered analysis with 95% sensitivity and 94% specificity compared to expert sonographer diagnosis</p>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="solution-icon">✓</span>
-                                <div>
-                                    <h3>Efficient</h3>
-                                    <p>Streamlined workflow reduces exam time from 30-45 minutes to under 10 minutes, with immediate results</p>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="solution-cta">
-                            <a href="workflow.html" class="btn btn--primary">See Our Workflow</a>
-                        </div>
-                    </div>
-                    <div class="solution-image">
-                        <img src="assets/images/dvtwebs.png" alt="VenoSense in Use">
-                    </div>
-                </div>
+        <article id="technology">
+            <h2>Our Technology</h2>
+            <p>
+                The VenoSense system employs a Doppler-based automated probe mounted on a motorized platform with a secure clamp mechanism. This ensures stable, high-quality imaging without continuous manual intervention.
+            </p>
+            <p>
+                Captured ultrasound images are processed in real-time by a machine learning algorithm that identifies key veins and analyzes blood flow dynamics. By comparing current data against established baselines, the system rapidly detects deviations that may indicate clot formation.
+            </p>
+            <div class="tech-specs">
+                <h3>Key Features:</h3>
+                <ul>
+                    <li>Automated Probe System</li>
+                    <li>Real-time Machine Learning Analysis</li>
+                    <li>Doppler-based Blood Flow Monitoring</li>
+                    <li>Secure Clamp Mechanism</li>
+                </ul>
             </div>
-        </section>
+        </article>
         
-        <!-- Features Section - Updated with modern design -->
+        <article id="workflow">
+            <h2>Workflow & Scores</h2>
+            <p>
+                VenoSense integrates seamlessly into the DVT diagnostic workflow, providing an automated and efficient solution for clinicians. The system automates the Wells score assessment, reducing variability and improving accuracy.
+            </p>
+            <div class="workflow-steps">
+                <h3>Diagnostic Workflow:</h3>
+                <ol>
+                    <li>Patient Assessment</li>
+                    <li>Automated Ultrasound Scan</li>
+                    <li>Real-time Image Analysis</li>
+                    <li>Automated Wells Score Calculation</li>
+                    <li>Report Generation</li>
+                </ol>
+            </div>
+        </article>
+        
+        <aside id="risk">
+            <h2>Risk Factors</h2>
+            <p>
+                VenoSense helps evaluate key risk factors to identify patients at high risk for DVT. These factors include age, obesity, history of vein injury, prolonged inactivity, and clotting disorders.
+            </p>
+            <div class="risk-factors-list">
+                <h3>Common Risk Factors:</h3>
+                <ul>
+                    <li>Age over 65</li>
+                    <li>Obesity</li>
+                    <li>History of Vein Injury</li>
+                    <li>Prolonged Inactivity</li>
+                    <li>Clotting Disorders</li>
+                </ul>
+            </div>
+        </aside>
+        
+        <article id="competition">
+            <h2>Competition & Advantage</h2>
+            <p>
+                VenoSense stands out from the competition by addressing current diagnostic shortcomings, lowering costs, and improving patient outcomes. Our advanced technology offers a more accessible and efficient solution compared to traditional methods.
+            </p>
+            <div class="comparison-table">
+                <h3>VenoSense vs. Traditional Methods:</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>VenoSense</th>
+                            <th>Traditional Methods</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Automation</td>
+                            <td>Automated</td>
+                            <td>Manual</td>
+                        </tr>
+                        <tr>
+                            <td>Cost</td>
+                            <td>Lower</td>
+                            <td>Higher</td>
+                        </tr>
+                        <tr>
+                            <td>Accuracy</td>
+                            <td>Improved</td>
+                            <td>Variable</td>
+                        </tr>
+                        <tr>
+                            <td>Accessibility</td>
+                            <td>High</td>
+                            <td>Limited</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+        
+        <aside id="team">
+            <h2>Meet the Team</h2>
+            <p>
+                Our multidisciplinary team includes: Justus Brown (Software Engineering), Atticus Carter (Software Engineering), Cynthia Sainz (Computer Aided and Experimental Design), and Kirandip Walia (Clinical Research). Supported by experienced mentors and clinical experts.
+            </p>
+            <div class="team-members">
+                <ul>
+                    <li>Justus Brown - Software Engineering</li>
+                    <li>Atticus Carter - Software Engineering</li>
+                    <li>Cynthia Sainz - Computer Aided and Experimental Design</li>
+                    <li>Kirandip Walia - Clinical Research</li>
+                </ul>
+            </div>
+        </aside>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>
+                Email us at: <a href="mailto:contact@venosense.com">contact@venosense.com</a>
+            </p>
+        </section>
+
+        <!-- Features Section - Updated with better icons -->
         <section class="section bg-light">
             <div class="container">
                 <div class="text-center">
@@ -169,8 +185,10 @@
                 <div class="modern-features">
                     <div class="feature-card-modern">
                         <div class="feature-card-modern__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                            <!-- Simplified icon for Automated Scanning -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
                             </svg>
                         </div>
                         <div class="feature-card-modern__content">
@@ -181,8 +199,11 @@
                     
                     <div class="feature-card-modern">
                         <div class="feature-card-modern__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                            <!-- Simplified icon for AI-Driven Analysis -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
                             </svg>
                         </div>
                         <div class="feature-card-modern__content">
@@ -193,8 +214,12 @@
                     
                     <div class="feature-card-modern">
                         <div class="feature-card-modern__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                            <!-- Simplified icon for Standardized Protocol -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="9" y1="15" x2="15" y2="15"></line>
+                                <line x1="9" y1="11" x2="15" y2="11"></line>
                             </svg>
                         </div>
                         <div class="feature-card-modern__content">
@@ -205,8 +230,9 @@
                     
                     <div class="feature-card-modern">
                         <div class="feature-card-modern__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            <!-- Simplified icon for Real-time Results -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                             </svg>
                         </div>
                         <div class="feature-card-modern__content">
@@ -217,8 +243,10 @@
                     
                     <div class="feature-card-modern">
                         <div class="feature-card-modern__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                            <!-- Simplified icon for Secure Integration -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                             </svg>
                         </div>
                         <div class="feature-card-modern__content">
@@ -229,8 +257,11 @@
                     
                     <div class="feature-card-modern">
                         <div class="feature-card-modern__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                            <!-- Simplified icon for Data Analytics -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="20" x2="18" y2="10"></line>
+                                <line x1="12" y1="20" x2="12" y2="4"></line>
+                                <line x1="6" y1="20" x2="6" y2="14"></line>
                             </svg>
                         </div>
                         <div class="feature-card-modern__content">
@@ -242,103 +273,9 @@
             </div>
         </section>
         
-        <!-- Benefits Section -->
-        <section class="section">
-            <div class="container">
-                <div class="benefits-grid">
-                    <div class="benefits-content">
-                        <h2>Benefits for Healthcare Providers</h2>
-                        <ul class="benefits-list">
-                            <li>Reduce diagnostic time from hours to minutes</li>
-                            <li>Optimize utilization of specialized sonographer staff</li>
-                            <li>Increase diagnostic accuracy and reduce missed cases</li>
-                            <li>Lower costs associated with unnecessary follow-up imaging</li>
-                            <li>Enable DVT screening in more clinical settings, including rural areas</li>
-                            <li>Improve patient experience with faster, less operator-dependent exams</li>
-                        </ul>
-                    </div>
-                    <div class="benefits-image">
-                        <img src="assets/images/Workflow.png" alt="VenoSense Benefits">
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Enhanced CTA Section - Removed wave for rectangular design -->
-        <section class="enhanced-cta-section">
-            <div class="enhanced-cta-section__overlay"></div>
-            <div class="container">
-                <div class="enhanced-cta-content">
-                    <h2>Ready to Transform DVT Detection?</h2>
-                    <p>Learn how VenoSense can improve patient outcomes in your healthcare setting</p>
-                    <div class="enhanced-cta-buttons">
-                        <a href="contact.html" class="btn btn--primary btn--lg">Request a Demo</a>
-                        <a href="team.html" class="btn btn--outline btn--light btn--lg">Meet Our Team</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Wave element removed for rectangular design -->
-        </section>
     </main>
-    
-    <!-- Site Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="site-footer__grid">
-                <div class="site-footer__brand">
-                    <img src="assets/images/Logo.png" alt="VenoSense Logo" class="site-footer__logo">
-                    <p>Revolutionizing vascular health monitoring with AI-powered ultrasound technology.</p>
-                </div>
-                
-                <div class="site-footer__nav">
-                    <h3>Quick Links</h3>
-                    <ul class="site-footer__menu">
-                        <li><a href="index.html" class="site-footer__link">Home</a></li>
-                        <li><a href="technology.html" class="site-footer__link">Technology</a></li>
-                        <li><a href="workflow.html" class="site-footer__link">Workflow</a></li>
-                        <li><a href="team.html" class="site-footer__link">Team</a></li>
-                        <li><a href="contact.html" class="site-footer__link">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="site-footer__contact">
-                    <h3>Contact Us</h3>
-                    <p>Email: <a href="mailto:contact@venosense.org" class="site-footer__link">contact@venosense.org</a></p>
-                    <a href="contact.html" class="btn btn--outline">Contact Form</a>
-                </div>
-            </div>
-            
-            <div class="site-footer__bottom">
-                <p>&copy; <span id="current-year">2023</span> VenoSense. All rights reserved.</p>
-                
-                <div class="site-footer__social">
-                    <a href="https://www.linkedin.com/company/veno-sense/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
-                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
-                        </svg>
-                    </a>
-                    <a href="#" aria-label="Twitter" class="social-icon">
-                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
+    <footer>
+        <p>&copy; 2025 VenoSense. All rights reserved.</p>
     </footer>
-    
-    <script>
-        // Update copyright year
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-        
-        // Mobile menu toggle
-        const menuToggle = document.getElementById('menu-toggle');
-        const siteNav = document.getElementById('site-nav');
-        
-        menuToggle.addEventListener('click', function() {
-            menuToggle.classList.toggle('open');
-            siteNav.classList.toggle('show');
-        });
-    </script>
 </body>
 </html>
