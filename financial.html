@@ -56,7 +56,7 @@
     </header>
 
     <main>
-        <!-- Page Header -->
+        <!-- Page Header - Updated to match team page blue style -->
         <section class="page-header financial-header">
             <div class="container page-header__content">
                 <h1>Financial Snapshot: Production to Profit</h1>
@@ -64,7 +64,7 @@
             </div>
         </section>
         
-        <!-- Cost of Production -->
+        <!-- Cost of Production - Simplified for mobile -->
         <section class="section">
             <div class="container">
                 <div class="text-center">
@@ -72,64 +72,41 @@
                     <p class="subtitle">Detailed breakdown of our unit manufacturing costs</p>
                 </div>
                 
-                <div class="financial-grid">
-                    <div class="financial-table-container">
-                        <table class="financial-table">
-                            <thead>
-                                <tr>
-                                    <th>Material</th>
-                                    <th>Cost Per Unit</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Medical-Grade Polyurethane</td>
-                                    <td>$250</td>
-                                </tr>
-                                <tr>
-                                    <td>Medical Grade Silicon</td>
-                                    <td>$2</td>
-                                </tr>
-                                <tr>
-                                    <td>Motor System</td>
-                                    <td>$10</td>
-                                </tr>
-                                <tr>
-                                    <td>Edge Device</td>
-                                    <td>$320</td>
-                                </tr>
-                                <tr>
-                                    <td>Manufacturing</td>
-                                    <td>$100</td>
-                                </tr>
-                                <tr class="total-row">
-                                    <td><strong>Total</strong></td>
-                                    <td><strong>$682</strong></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    
-                    <div class="financial-chart">
-                        <div class="chart-title">Production Cost Breakdown</div>
-                        <div class="cost-chart">
-                            <div class="cost-bar" style="--percent: 36.7%;" data-value="$250">
-                                <span class="bar-label">Medical-Grade Polyurethane</span>
-                            </div>
-                            <div class="cost-bar" style="--percent: 0.3%;" data-value="$2">
-                                <span class="bar-label">Medical Grade Silicon</span>
-                            </div>
-                            <div class="cost-bar" style="--percent: 1.5%;" data-value="$10">
-                                <span class="bar-label">Motor System</span>
-                            </div>
-                            <div class="cost-bar" style="--percent: 46.9%;" data-value="$320">
-                                <span class="bar-label">Edge Device</span>
-                            </div>
-                            <div class="cost-bar" style="--percent: 14.7%;" data-value="$100">
-                                <span class="bar-label">Manufacturing</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="financial-table-container">
+                    <table class="financial-table">
+                        <thead>
+                            <tr>
+                                <th>Material</th>
+                                <th>Cost Per Unit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Medical-Grade Polyurethane</td>
+                                <td>$250</td>
+                            </tr>
+                            <tr>
+                                <td>Medical Grade Silicon</td>
+                                <td>$2</td>
+                            </tr>
+                            <tr>
+                                <td>Motor System</td>
+                                <td>$10</td>
+                            </tr>
+                            <tr>
+                                <td>Edge Device</td>
+                                <td>$320</td>
+                            </tr>
+                            <tr>
+                                <td>Manufacturing</td>
+                                <td>$100</td>
+                            </tr>
+                            <tr class="total-row">
+                                <td><strong>Total</strong></td>
+                                <td><strong>$682</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </section>
@@ -207,7 +184,7 @@
             </div>
         </section>
         
-        <!-- Subscription Plans -->
+        <!-- Subscription Plans - Redesigned for mobile -->
         <section class="section">
             <div class="container">
                 <div class="text-center">
@@ -215,60 +192,65 @@
                     <p class="subtitle">Flexible options to meet the needs of any healthcare facility</p>
                 </div>
                 
-                <div class="subscription-table-container">
-                    <table class="subscription-table">
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>BASIC</th>
-                                <th>ADVANCED</th>
-                                <th>PREMIUM</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="feature-title">Setup Price</td>
-                                <td>$5,000</td>
-                                <td>$5,000</td>
-                                <td>$5,000</td>
-                            </tr>
-                            <tr>
-                                <td class="feature-title">Maintenance</td>
-                                <td>$1,500</td>
-                                <td>$2,500</td>
-                                <td>$4,000</td>
-                            </tr>
-                            <tr>
-                                <td class="feature-title">Max Units</td>
-                                <td>5</td>
-                                <td>15</td>
-                                <td>15+</td>
-                            </tr>
-                            <tr>
-                                <td class="feature-title">Support</td>
-                                <td>Email & Phone</td>
-                                <td>Virtual</td>
-                                <td>24/7 On-Site</td>
-                            </tr>
-                            <tr>
-                                <td class="feature-title">Platform Access</td>
-                                <td>Tablet Only</td>
-                                <td>Web Dashboard & Mobile App</td>
-                                <td>Multi-Device Access</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td><a href="contact.html" class="btn btn--outline">Select Basic</a></td>
-                                <td><a href="contact.html" class="btn btn--primary">Select Advanced</a></td>
-                                <td><a href="contact.html" class="btn btn--outline">Select Premium</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="subscription-plans">
+                    <div class="plan-card">
+                        <h3 class="plan-name">BASIC</h3>
+                        <div class="plan-price">
+                            <span class="setup-price">Setup: $5,000</span>
+                            <span class="maintenance-price">$1,500/yr</span>
+                        </div>
+                        <ul class="plan-features">
+                            <li>Up to 5 units</li>
+                            <li>Email & Phone support</li>
+                            <li>Tablet access only</li>
+                            <li>Software updates</li>
+                            <li>Basic reports</li>
+                        </ul>
+                        <div class="plan-cta">
+                            <a href="contact.html" class="btn btn--outline">Select Basic</a>
+                        </div>
+                    </div>
+                    
+                    <div class="plan-card featured">
+                        <h3 class="plan-name">ADVANCED</h3>
+                        <div class="plan-price">
+                            <span class="setup-price">Setup: $5,000</span>
+                            <span class="maintenance-price">$2,500/yr</span>
+                        </div>
+                        <ul class="plan-features">
+                            <li>Up to 15 units</li>
+                            <li>Virtual support</li>
+                            <li>Web dashboard & mobile app</li>
+                            <li>Priority software updates</li>
+                            <li>Advanced analytics</li>
+                        </ul>
+                        <div class="plan-cta">
+                            <a href="contact.html" class="btn btn--primary">Select Advanced</a>
+                        </div>
+                    </div>
+                    
+                    <div class="plan-card">
+                        <h3 class="plan-name">PREMIUM</h3>
+                        <div class="plan-price">
+                            <span class="setup-price">Setup: $5,000</span>
+                            <span class="maintenance-price">$4,000/yr</span>
+                        </div>
+                        <ul class="plan-features">
+                            <li>15+ units</li>
+                            <li>24/7 on-site support</li>
+                            <li>Multi-device access</li>
+                            <li>Custom integrations</li>
+                            <li>Enterprise reporting</li>
+                        </ul>
+                        <div class="plan-cta">
+                            <a href="contact.html" class="btn btn--outline">Select Premium</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         
-        <!-- Profitability Breakdown -->
+        <!-- Profitability Breakdown - Improved mobile display -->
         <section class="section bg-light">
             <div class="container">
                 <div class="text-center">
@@ -319,12 +301,37 @@
                     </div>
                 </div>
                 
+                <!-- New Revenue Chart that works well on mobile -->
                 <div class="revenue-chart">
                     <h3>Revenue Distribution</h3>
-                    <div class="pie-chart">
-                        <div class="slice direct-sales" style="--percentage: 24%;"><span>Direct Sales<br>24%</span></div>
-                        <div class="slice subscriptions" style="--percentage: 43%;"><span>Subscriptions<br>43%</span></div>
-                        <div class="slice hospital-contracts" style="--percentage: 33%;"><span>Hospital<br>Contracts<br>33%</span></div>
+                    <div class="revenue-bars">
+                        <div class="revenue-bar">
+                            <div class="revenue-bar__label">
+                                <span>Direct Sales</span>
+                                <span>24% ($450,000)</span>
+                            </div>
+                            <div class="revenue-bar__track">
+                                <div class="revenue-bar__fill revenue-bar__fill--direct"></div>
+                            </div>
+                        </div>
+                        <div class="revenue-bar">
+                            <div class="revenue-bar__label">
+                                <span>Subscriptions</span>
+                                <span>43% ($800,000)</span>
+                            </div>
+                            <div class="revenue-bar__track">
+                                <div class="revenue-bar__fill revenue-bar__fill--subscriptions"></div>
+                            </div>
+                        </div>
+                        <div class="revenue-bar">
+                            <div class="revenue-bar__label">
+                                <span>Hospital Contracts</span>
+                                <span>33% ($625,000)</span>
+                            </div>
+                            <div class="revenue-bar__track">
+                                <div class="revenue-bar__fill revenue-bar__fill--hospital"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
