@@ -654,11 +654,16 @@ a:hover {
   
   .site-header__logo img {
     height: 55px; /* Slightly smaller on mobile but still larger than original */
+    margin-bottom: 8px; /* Adding padding below logo on mobile */
   }
   
   .site-header__logo {
     top: var(--space-1);
     left: var(--space-1);
+  }
+  
+  .site-header__inner {
+    align-items: center; /* Better vertical alignment on mobile */
   }
 }
 

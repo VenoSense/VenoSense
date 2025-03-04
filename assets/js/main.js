@@ -4,6 +4,17 @@
  */
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Mobile menu functionality - Fixed to ensure it works on all pages
+    const menuToggle = document.getElementById('menu-toggle');
+    const siteNav = document.getElementById('site-nav');
+    
+    if (menuToggle && siteNav) {
+        menuToggle.addEventListener('click', function() {
+            this.classList.toggle('open');
+            siteNav.classList.toggle('show');
+        });
+    }
+    
     // Adjust hero layout - modified to work without the wave
     function adjustHeroLayout() {
         const heroSection = document.querySelector('.hero-banner');
@@ -42,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Set active navigation based on current page
     function setActiveNavigation() {
         const currentPath = window.location.pathname;
-        const pageName = currentPath.split('/').pop();
+        const pageName = currentPath.split('/').pop() || 'index.html'; // Default to index.html if no page specified
         
         const navLinks = document.querySelectorAll('.site-nav__link');
         navLinks.forEach(link => {
