@@ -298,7 +298,7 @@ a:hover {
 }
 
 .site-header__menu-toggle {
-  display: none;
+  display: none; /* Keep this as none for desktop */
   background: none;
   border: none;
   width: 30px;
@@ -636,7 +636,7 @@ a:hover {
   }
   
   .site-header__menu-toggle {
-    display: block;
+    display: block; /* Only show hamburger on mobile */
   }
   
   .site-nav {

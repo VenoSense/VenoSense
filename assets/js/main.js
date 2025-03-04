@@ -4,25 +4,52 @@
  */
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Mobile menu functionality - Completely revised to ensure it works on all pages
-    const menuToggle = document.getElementById('menu-toggle');
-    const siteNav = document.getElementById('site-nav');
-    
-    if (menuToggle && siteNav) {
-        // Remove any existing event listeners to prevent duplicates
-        menuToggle.removeEventListener('click', toggleMenu);
+    // Mobile menu functionality - Fixed robust version
+    const setupMobileMenu = () => {
+        const menuToggle = document.getElementById('menu-toggle');
+        const siteNav = document.getElementById('site-nav');
         
-        // Add the event listener with a named function for better maintainability
-        menuToggle.addEventListener('click', toggleMenu);
+        if (!menuToggle || !siteNav) {
+            console.warn('Menu toggle or navigation element not found');
+            return;
+        }
         
-        // Toggle menu function that can be referenced for removal if needed
+        // Use a simple function for toggling that's easier to debug
         function toggleMenu() {
             menuToggle.classList.toggle('open');
             siteNav.classList.toggle('show');
         }
-    } else {
-        console.warn('Menu toggle or navigation element not found');
-    }
+        
+        // Remove any previously attached handlers to avoid duplicates
+        menuToggle.removeEventListener('click', toggleMenu);
+        
+        // Add click event listener
+        menuToggle.addEventListener('click', toggleMenu);
+        
+        // Also close menu when clicking outside or on a menu item
+        document.addEventListener('click', function(event) {
+            const isClickInsideNav = siteNav.contains(event.target);
+            const isClickOnMenuToggle = menuToggle.contains(event.target);
+            
+            // If menu is open and click is outside the nav and not on the toggle, close it
+            if (siteNav.classList.contains('show') && !isClickInsideNav && !isClickOnMenuToggle) {
+                menuToggle.classList.remove('open');
+                siteNav.classList.remove('show');
+            }
+        });
+        
+        // Close menu when a nav link is clicked
+        const navLinks = document.querySelectorAll('.site-nav__link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                menuToggle.classList.remove('open');
+                siteNav.classList.remove('show');
+            });
+        });
+    };
+    
+    // Call the setup function
+    setupMobileMenu();
     
     // Adjust hero layout - modified to work without the wave
     function adjustHeroLayout() {
