@@ -450,16 +450,7 @@
         // Update copyright year
         document.getElementById('current-year').textContent = new Date().getFullYear();
         
-        // Mobile menu toggle
-        const menuToggle = document.getElementById('menu-toggle');
-        const siteNav = document.getElementById('site-nav');
-        
-        menuToggle.addEventListener('click', function() {
-            menuToggle.classList.toggle('open');
-            siteNav.classList.toggle('show');
-        });
-        
-        // Tab functionality
+        // Keep the technology-specific tab functionality
         const tabButtons = document.querySelectorAll('.tech-tabs__button');
         const tabContents = document.querySelectorAll('.tech-tab');
         

@@ -4,15 +4,24 @@
  */
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Mobile menu functionality - Fixed to ensure it works on all pages
+    // Mobile menu functionality - Completely revised to ensure it works on all pages
     const menuToggle = document.getElementById('menu-toggle');
     const siteNav = document.getElementById('site-nav');
     
     if (menuToggle && siteNav) {
-        menuToggle.addEventListener('click', function() {
-            this.classList.toggle('open');
+        // Remove any existing event listeners to prevent duplicates
+        menuToggle.removeEventListener('click', toggleMenu);
+        
+        // Add the event listener with a named function for better maintainability
+        menuToggle.addEventListener('click', toggleMenu);
+        
+        // Toggle menu function that can be referenced for removal if needed
+        function toggleMenu() {
+            menuToggle.classList.toggle('open');
             siteNav.classList.toggle('show');
-        });
+        }
+    } else {
+        console.warn('Menu toggle or navigation element not found');
     }
     
     // Adjust hero layout - modified to work without the wave
