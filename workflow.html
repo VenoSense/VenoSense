@@ -84,7 +84,7 @@
                         <div class="workflow-benefits">
                             <div class="workflow-benefit">
                                 <div class="workflow-benefit__icon">
-                                    <span class="time-icon">⏱️</span>
+                                    <span class="icon-clock"></span>
                                 </div>
                                 <div class="workflow-benefit__content">
                                     <h3>Reduces Examination Time</h3>
@@ -94,7 +94,7 @@
                             
                             <div class="workflow-benefit">
                                 <div class="workflow-benefit__icon">
-                                    <span class="consistency-icon">📊</span>
+                                    <span class="icon-chart"></span>
                                 </div>
                                 <div class="workflow-benefit__content">
                                     <h3>Ensures Consistency</h3>
@@ -104,7 +104,7 @@
                             
                             <div class="workflow-benefit">
                                 <div class="workflow-benefit__icon">
-                                    <span class="document-icon">📄</span>
+                                    <span class="icon-document"></span>
                                 </div>
                                 <div class="workflow-benefit__content">
                                     <h3>Automated Documentation</h3>
@@ -136,7 +136,7 @@
             </div>
         </section>
         
-        <!-- Step by Step Process -->
+        <!-- Step by Step Process - Completely Redesigned -->
         <section class="section bg-light">
             <div class="container">
                 <div class="text-center">
@@ -144,31 +144,36 @@
                     <p class="subtitle">How VenoSense streamlines DVT detection from start to finish</p>
                 </div>
                 
-                <div class="workflow-steps">
-                    <div class="workflow-step">
-                        <div class="workflow-step__number">1</div>
-                        <div class="workflow-step__content">
-                            <h3>Patient Information & Risk Assessment</h3>
-                            <p>Input basic patient information and answer clinical questions for initial Wells score assessment to determine pre-test probability of DVT.</p>
-                            <div class="workflow-step__visual">
-                                <div class="form-mock">
-                                    <div class="form-mock__header">Patient Assessment</div>
-                                    <div class="form-mock__body">
-                                        <div class="form-mock__row">
-                                            <div class="form-mock__label">Patient ID:</div>
-                                            <div class="form-mock__field"></div>
+                <div class="process-timeline">
+                    <div class="process-step">
+                        <div class="process-step__marker">
+                            <span class="process-step__number">1</span>
+                        </div>
+                        <div class="process-step__content">
+                            <div class="process-step__header">
+                                <h3>Patient Information & Risk Assessment</h3>
+                            </div>
+                            <div class="process-step__body">
+                                <p>Input basic patient information and answer clinical questions for initial Wells score assessment to determine pre-test probability of DVT.</p>
+                                <div class="process-step__visual">
+                                    <div class="patient-form">
+                                        <div class="form-header">
+                                            <div class="form-title">Patient Assessment</div>
                                         </div>
-                                        <div class="form-mock__row">
-                                            <div class="form-mock__label">Recent surgery?</div>
-                                            <div class="form-mock__checkbox checked"></div>
+                                        <div class="form-field">
+                                            <div class="field-label"></div>
+                                            <div class="field-input"></div>
                                         </div>
-                                        <div class="form-mock__row">
-                                            <div class="form-mock__label">Leg swelling?</div>
-                                            <div class="form-mock__checkbox checked"></div>
+                                        <div class="form-field">
+                                            <div class="field-label"></div>
+                                            <div class="field-radio checked"></div>
                                         </div>
-                                        <div class="form-mock__row">
-                                            <div class="form-mock__label">Active cancer?</div>
-                                            <div class="form-mock__checkbox"></div>
+                                        <div class="form-field">
+                                            <div class="field-label"></div>
+                                            <div class="field-radio"></div>
+                                        </div>
+                                        <div class="form-buttons">
+                                            <div class="form-button primary"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -176,180 +181,239 @@
                         </div>
                     </div>
                     
-                    <div class="workflow-step">
-                        <div class="workflow-step__number">2</div>
-                        <div class="workflow-step__content">
-                            <h3>Device Positioning & Setup</h3>
-                            <p>The VenoSense device is positioned on the patient's leg using the ergonomic attachment system, ensuring proper alignment for the automated scan.</p>
-                            <div class="workflow-step__visual">
-                                <div class="device-setup-mock">
-                                    <div class="device-setup-mock__leg"></div>
-                                    <div class="device-setup-mock__device"></div>
-                                    <div class="device-setup-mock__indicator"></div>
-                                    <div class="device-setup-mock__label">Correct Position</div>
-                                </div>
-                            </div>
+                    <div class="process-step">
+                        <div class="process-step__marker">
+                            <span class="process-step__number">2</span>
                         </div>
-                    </div>
-                    
-                    <div class="workflow-step">
-                        <div class="workflow-step__number">3</div>
-                        <div class="workflow-step__content">
-                            <h3>Automated Ultrasound Scan</h3>
-                            <p>The system automatically performs a comprehensive venous ultrasound examination, capturing images at standardized locations along the lower extremity veins.</p>
-                            <div class="workflow-step__visual">
-                                <div class="scan-progress-mock">
-                                    <div class="scan-progress-mock__header">Scan Progress</div>
-                                    <div class="scan-progress-mock__path">
-                                        <div class="scan-progress-mock__path-line"></div>
-                                        <div class="scan-progress-mock__segment completed" style="top: 10%"></div>
-                                        <div class="scan-progress-mock__segment completed" style="top: 25%"></div>
-                                        <div class="scan-progress-mock__segment completed" style="top: 40%"></div>
-                                        <div class="scan-progress-mock__segment active" style="top: 55%"></div>
-                                        <div class="scan-progress-mock__segment" style="top: 70%"></div>
-                                        <div class="scan-progress-mock__segment" style="top: 85%"></div>
-                                    </div>
-                                    <div class="scan-progress-mock__percentage">57%</                                </div>
-                                </div>
+                        <div class="process-step__content">
+                            <div class="process-step__header">
+                                <h3>Device Positioning & Setup</h3>
                             </div>
-                        </div>
-                    </div>
-                    
-                    <div class="workflow-step">
-                        <div class="workflow-step__number">4</div>
-                        <div class="workflow-step__content">
-                            <h3>AI-Powered Image Analysis</h3>
-                            <p>VenoSense's proprietary algorithm analyzes the captured images in real-time, identifying venous obstruction, abnormal compressibility, and other DVT indicators.</p>
-                            <div class="workflow-step__visual">
-                                <div class="analysis-mock">
-                                    <div class="analysis-mock__header">Real-time Analysis</div>
-                                    <div class="analysis-mock__body">
-                                        <div class="analysis-mock__visual">
-                                            <div class="analysis-mock__vessel"></div>
-                                            <div class="analysis-mock__highlight"></div>
+                            <div class="process-step__body">
+                                <p>The VenoSense device is positioned on the patient's leg using the ergonomic attachment system, ensuring proper alignment for the automated scan.</p>
+                                <div class="process-step__visual">
+                                    <div class="device-setup">
+                                        <div class="leg-outline"></div>
+                                        <div class="device-outline"></div>
+                                        <div class="alignment-indicator">
+                                            <span class="alignment-dot"></span>
+                                            <span class="alignment-dot"></span>
+                                            <span class="alignment-dot active"></span>
                                         </div>
-                                        <div class="analysis-mock__data">
-                                            <div class="analysis-mock__row">
-                                                <div class="analysis-mock__label">Compressibility:</div>
-                                                <div class="analysis-mock__value critical">23%</div>
-                                            </div>
-                                            <div class="analysis-mock__row">
-                                                <div class="analysis-mock__label">Flow detected:</div>
-                                                <div class="analysis-mock__value critical">Limited</div>
-                                            </div>
-                                            <div class="analysis-mock__row">
-                                                <div class="analysis-mock__label">DVT probability:</div>
-                                                <div class="analysis-mock__value critical">High</div>
+                                        <div class="alignment-text">Device Positioned</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="process-step__marker">
+                            <span class="process-step__number">3</span>
+                        </div>
+                        <div class="process-step__content">
+                            <div class="process-step__header">
+                                <h3>Automated Ultrasound Scan</h3>
+                            </div>
+                            <div class="process-step__body">
+                                <p>The system automatically performs a comprehensive venous ultrasound examination, capturing images at standardized locations along the lower extremity veins.</p>
+                                <div class="process-step__visual">
+                                    <div class="scan-progress">
+                                        <div class="scan-header">Scan in Progress</div>
+                                        <div class="scan-visualization">
+                                            <div class="leg-scan">
+                                                <div class="scan-track"></div>
+                                                <div class="scan-cursor"></div>
+                                                <div class="scan-point completed" style="top: 20%; left: 50%"></div>
+                                                <div class="scan-point completed" style="top: 35%; left: 50%"></div>
+                                                <div class="scan-point active" style="top: 50%; left: 50%"></div>
+                                                <div class="scan-point" style="top: 65%; left: 50%"></div>
+                                                <div class="scan-point" style="top: 80%; left: 50%"></div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="workflow-step">
-                        <div class="workflow-step__number">5</div>
-                        <div class="workflow-step__content">
-                            <h3>Results & Report Generation</h3>
-                            <p>The system generates a comprehensive report combining the Wells score assessment and ultrasound findings, with clear indication of DVT probability.</p>
-                            <div class="workflow-step__visual">
-                                <div class="report-mock">
-                                    <div class="report-mock__header">
-                                        DVT Assessment Report
-                                    </div>
-                                    <div class="report-mock__result critical">
-                                        HIGH PROBABILITY
-                                    </div>
-                                    <div class="report-mock__body">
-                                        <div class="report-mock__section">
-                                            <div class="report-mock__subtitle">Wells Score: 4 (High Risk)</div>
-                                            <div class="report-mock__line"></div>
-                                            <div class="report-mock__line short"></div>
+                                        <div class="scan-progress-bar">
+                                            <div class="progress-track"></div>
+                                            <div class="progress-fill"></div>
                                         </div>
-                                        <div class="report-mock__section">
-                                            <div class="report-mock__subtitle">Ultrasound Findings</div>
-                                            <div class="report-mock__line"></div>
-                                            <div class="report-mock__line"></div>
-                                            <div class="report-mock__line short"></div>
+                                        <div class="scan-info">
+                                            <span>60% Complete</span>
+                                            <span>Estimated time: 2:15</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <!-- Clinical Integration Section -->
-        <section class="section">
-            <div class="container">
-            <div class="text-center">
-                <h2>Clinical Integration</h2>
-                <p class="subtitle">Designed to complement existing healthcare workflows</p>
-            </div>
-            
-            <div class="clinical-integration">
-                <div class="clinical-integration__visual">
-                <div class="integration-diagram">
-                    <div class="integration-node standard">
-                    <div class="integration-node__icon"></div>
-                    <div class="integration-node__label">Standard Clinical Workflow</div>
-                    </div>
-                    <div class="integration-arrow">
-                    <div class="integration-arrow__line"></div>
-                    <div class="integration-arrow__head"></div>
-                    </div>
-                    <div class="integration-node venosense">
-                    <div class="integration-node__icon"></div>
-                    <div class="integration-node__label">VenoSense Integration</div>
-                    </div>
-                    <div class="integration-arrow">
-                    <div class="integration-arrow__line"></div>
-                    <div class="integration-arrow__head"></div>
-                    </div>
-                    <div class="integration-node result">
-                    <div class="integration-node__icon"></div>
-                    <div class="integration-node__label">Enhanced Diagnostic Results</div>
-                    </div>
-                </div>
-                </div>
-                
-                <div class="clinical-integration__content">
-                <h3>Fitting into Your Clinical Practice</h3>
-                <p>VenoSense has been designed with real-world clinical environments in mind. The system can be deployed in multiple settings:</p>
-                
-                <div class="settings-grid">
-                    <div class="setting-item">
-                    <div class="setting-item__icon"></div>
-                    <h4>Emergency Departments</h4>
-                    <p>Quick triage and assessment of suspected DVT cases without waiting for ultrasound technicians</p>
+                    
+                    <div class="process-step">
+                        <div class="process-step__marker">
+                            <span class="process-step__number">4</span>
+                        </div>
+                        <div class="process-step__content">
+                            <div class="process-step__header">
+                                <h3>AI-Powered Image Analysis</h3>
+                            </div>
+                            <div class="process-step__body">
+                                <p>VenoSense's proprietary algorithm analyzes the captured images in real-time, identifying venous obstruction, abnormal compressibility, and other DVT indicators.</p>
+                                <div class="process-step__visual">
+                                    <div class="ai-analysis">
+                                        <div class="analysis-header">AI Analysis</div>
+                                        <div class="analysis-visualization">
+                                            <div class="vein-graphic">
+                                                <div class="vein-path"></div>
+                                                <div class="vein-block"></div>
+                                                <div class="detection-highlight"></div>
+                                            </div>
+                                        </div>
+                                        <div class="analysis-metrics">
+                                            <div class="metric">
+                                                <div class="metric-label">Compressibility</div>
+                                                <div class="metric-value critical">23%</div>
+                                            </div>
+                                            <div class="metric">
+                                                <div class="metric-label">Flow Detection</div>
+                                                <div class="metric-value critical">Limited</div>
+                                            </div>
+                                            <div class="metric">
+                                                <div class="metric-label">Confidence</div>
+                                                <div class="metric-value">96%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="setting-item"></div>
-                    <div class="setting-item__icon"></div>
-                    <h4>Primary Care Clinics</h4>
-                    <p>Enable on-site DVT screening capabilities without referral to specialized imaging centers</p>
-                    </div>
-                    
-                    <div class="setting-item">
-                    <div class="setting-item__icon"></div>
-                    <h4>Vascular Clinics</h4>
-                    <p>Improve patient throughput by automating routine DVT examinations</p>
-                    </div>
-                    
-                    <div class="setting-item">
-                    <div class="setting-item__icon"></div>
-                    <h4>Rural & Underserved Areas</h4>
-                    <p>Bring advanced DVT diagnostic capabilities to locations without specialized personnel</p>
+                    <div class="process-step">
+                        <div class="process-step__marker">
+                            <span class="process-step__number">5</span>
+                        </div>
+                        <div class="process-step__content">
+                            <div class="process-step__header">
+                                <h3>Results & Report Generation</h3>
+                            </div>
+                            <div class="process-step__body">
+                                <p>The system generates a comprehensive report combining the Wells score assessment and ultrasound findings, with clear indication of DVT probability.</p>
+                                <div class="process-step__visual">
+                                    <div class="report-preview">
+                                        <div class="report-header">
+                                            <div class="report-title">DVT Assessment Report</div>
+                                        </div>
+                                        <div class="report-alert critical">
+                                            <span>High DVT Probability</span>
+                                        </div>
+                                        <div class="report-section">
+                                            <div class="section-title">Wells Score: 4 (High Risk)</div>
+                                            <div class="section-content">
+                                                <div class="content-line"></div>
+                                                <div class="content-line short"></div>
+                                            </div>
+                                        </div>
+                                        <div class="report-section">
+                                            <div class="section-title">Ultrasound Findings</div>
+                                            <div class="section-content">
+                                                <div class="content-line"></div>
+                                                <div class="content-line"></div>
+                                                <div class="content-line short"></div>
+                                            </div>
+                                        </div>
+                                        <div class="report-actions">
+                                            <div class="report-button primary"></div>
+                                            <div class="report-button secondary"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                </div>
-            </div>
             </div>
         </section>
         
-        <!-- Wells Score Explanation -->
+        <!-- Clinical Integration Section - Redesigned -->
+        <section class="section">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Clinical Integration</h2>
+                    <p class="subtitle">Designed to complement existing healthcare workflows</p>
+                </div>
+                
+                <div class="integration-showcase">
+                    <div class="integration-flow">
+                        <div class="integration-step">
+                            <div class="integration-icon standard">
+                                <span class="icon-hospital"></span>
+                            </div>
+                            <div class="integration-label">Standard Clinical Workflow</div>
+                        </div>
+                        <div class="integration-connector">
+                            <div class="connector-line"></div>
+                            <div class="connector-plus">+</div>
+                        </div>
+                        <div class="integration-step">
+                            <div class="integration-icon venosense">
+                                <span class="icon-device"></span>
+                            </div>
+                            <div class="integration-label">VenoSense Integration</div>
+                        </div>
+                        <div class="integration-connector">
+                            <div class="connector-line"></div>
+                            <div class="connector-arrow"></div>
+                        </div>
+                        <div class="integration-step">
+                            <div class="integration-icon result">
+                                <span class="icon-result"></span>
+                            </div>
+                            <div class="integration-label">Enhanced Diagnostic Results</div>
+                        </div>
+                    </div>
+                    
+                    <div class="integration-details">
+                        <div class="integration-intro">
+                            <h3>Seamless Fit into Your Clinical Practice</h3>
+                            <p>VenoSense has been designed with real-world clinical environments in mind, easily adapting to various healthcare settings while enhancing diagnostic capabilities and efficiency.</p>
+                        </div>
+                        
+                        <div class="settings-cards">
+                            <div class="setting-card">
+                                <div class="setting-icon">
+                                    <span class="icon-emergency"></span>
+                                </div>
+                                <h4>Emergency Departments</h4>
+                                <p>Quick triage and assessment of suspected DVT cases without waiting for ultrasound technicians</p>
+                            </div>
+                            
+                            <div class="setting-card">
+                                <div class="setting-icon">
+                                    <span class="icon-clinic"></span>
+                                </div>
+                                <h4>Primary Care Clinics</h4>
+                                <p>Enable on-site DVT screening capabilities without referral to specialized imaging centers</p>
+                            </div>
+                            
+                            <div class="setting-card">
+                                <div class="setting-icon">
+                                    <span class="icon-vascular"></span>
+                                </div>
+                                <h4>Vascular Clinics</h4>
+                                <p>Improve patient throughput by automating routine DVT examinations</p>
+                            </div>
+                            
+                            <div class="setting-card">
+                                <div class="setting-icon">
+                                    <span class="icon-rural"></span>
+                                </div>
+                                <h4>Rural & Underserved Areas</h4>
+                                <p>Bring advanced DVT diagnostic capabilities to locations without specialized personnel</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Wells Score Explanation - Completely Redesigned -->
         <section class="section bg-light">
             <div class="container">
                 <div class="text-center">
@@ -357,66 +421,105 @@
                     <p class="subtitle">Evidence-based clinical decision support</p>
                 </div>
                 
-                <div class="wells-score">
-                    <div class="wells-score__content">
-                        <h3>Automated Clinical Assessment</h3>
-                        <p>
-                            The Wells Score is a clinically validated tool for assessing DVT probability. VenoSense digitizes and streamlines this process, combining clinical inputs with imaging findings for a comprehensive assessment.
-                        </p>
+                <div class="wells-module">
+                    <div class="wells-explanation">
+                        <div class="wells-intro">
+                            <h3>Automated Clinical Assessment</h3>
+                            <p>
+                                The Wells Score is a clinically validated tool for assessing DVT probability. VenoSense digitizes and streamlines this process, combining clinical inputs with imaging findings for a comprehensive assessment.
+                            </p>
+                        </div>
                         
-                        <div class="wells-criteria">
-                            <h4>Integrated Wells Criteria:</h4>
-                            <ul>
-                                <li>Active cancer treatment</li>
-                                <li>Recent paralysis, paresis, or immobilization</li>
-                                <li>Recent bed rest or major surgery</li>
-                                <li>Localized tenderness along deep veins</li>
-                                <li>Entire leg swelling</li>
-                                <li>Calf swelling >3cm compared to asymptomatic leg</li>
-                                <li>Pitting edema in symptomatic leg</li>
-                                <li>Collateral superficial veins</li>
-                                <li>Previous DVT history</li>
-                                <li>Alternative diagnosis as likely as DVT</li>
-                            </ul>
+                        <div class="wells-interpretation">
+                            <div class="interpretation-box">
+                                <h4>Score Interpretation</h4>
+                                <div class="interpretation-levels">
+                                    <div class="level">
+                                        <div class="level-marker low"></div>
+                                        <div class="level-details">
+                                            <div class="level-score">0-1 Points</div>
+                                            <div class="level-risk">Low Risk</div>
+                                        </div>
+                                    </div>
+                                    <div class="level">
+                                        <div class="level-marker moderate"></div>
+                                        <div class="level-details">
+                                            <div class="level-score">2 Points</div>
+                                            <div class="level-risk">Moderate Risk</div>
+                                        </div>
+                                    </div>
+                                    <div class="level">
+                                        <div class="level-marker high"></div>
+                                        <div class="level-details">
+                                            <div class="level-score">≥3 Points</div>
+                                            <div class="level-risk">High Risk</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="wells-score__visual">
-                        <div class="wells-calculator">
-                            <div class="wells-calculator__header">Wells Score Calculator</div>
-                            <div class="wells-calculator__body">
-                                <div class="wells-calculator__row">
-                                    <div class="wells-calculator__criterion">Active cancer</div>
-                                    <div class="wells-calculator__checkbox"></div>
-                                    <div class="wells-calculator__points">+1</div>
-                                </div>
-                                <div class="wells-calculator__row">
-                                    <div class="wells-calculator__criterion">Paralysis/immobilization</div>
-                                    <div class="wells-calculator__checkbox checked"></div>
-                                    <div class="wells-calculator__points">+1</div>
-                                </div>
-                                <div class="wells-calculator__row">
-                                    <div class="wells-calculator__criterion">Bed rest >3 days</div>
-                                    <div class="wells-calculator__checkbox checked"></div>
-                                    <div class="wells-calculator__points">+1</div>
-                                </div>
-                                <div class="wells-calculator__row">
-                                    <div class="wells-calculator__criterion">Localized tenderness</div>
-                                    <div class="wells-calculator__checkbox checked"></div>
-                                    <div class="wells-calculator__points">+1</div>
-                                </div>
-                                <div class="wells-calculator__row">
-                                    <div class="wells-calculator__criterion">Entire leg swelling</div>
-                                    <div class="wells-calculator__checkbox"></div>
-                                    <div class="wells-calculator__points">+1</div>
-                                </div>
-                                <div class="wells-calculator__divider"></div>
-                                <div class="wells-calculator__result">
-                                    <div class="wells-calculator__label">Total Score:</div>
-                                    <div class="wells-calculator__score">3</div>
-                                    <div class="wells-calculator__risk">HIGH RISK</div>
-                                </div>
+                    <div class="wells-calculator">
+                        <h3>Wells Criteria</h3>
+                        
+                        <div class="criteria-list">
+                            <div class="criterion">
+                                <div class="criterion-check"></div>
+                                <div class="criterion-text">Active cancer treatment (ongoing or within 6 months)</div>
+                                <div class="criterion-points">+1</div>
                             </div>
+                            <div class="criterion">
+                                <div class="criterion-check checked"></div>
+                                <div class="criterion-text">Paralysis, paresis, or recent immobilization of lower extremities</div>
+                                <div class="criterion-points">+1</div>
+                            </div>
+                            <div class="criterion">
+                                <div class="criterion-check checked"></div>
+                                <div class="criterion-text">Recently bedridden >3 days or major surgery within 12 weeks</div>
+                                <div class="criterion-points">+1</div>
+                            </div>
+                            <div class="criterion">
+                                <div class="criterion-check checked"></div>
+                                <div class="criterion-text">Localized tenderness along deep venous system</div>
+                                <div class="criterion-points">+1</div>
+                            </div>
+                            <div class="criterion">
+                                <div class="criterion-check"></div>
+                                <div class="criterion-text">Entire leg swollen</div>
+                                <div class="criterion-points">+1</div>
+                            </div>
+                            <div class="criterion">
+                                <div class="criterion-check"></div>
+                                <div class="criterion-text">Calf swelling >3 cm compared to asymptomatic leg</div>
+                                <div class="criterion-points">+1</div>
+                            </div>
+                            <div class="criterion">
+                                <div class="criterion-check"></div>
+                                <div class="criterion-text">Pitting edema confined to symptomatic leg</div>
+                                <div class="criterion-points">+1</div>
+                            </div>
+                            <div class="criterion">
+                                <div class="criterion-check"></div>
+                                <div class="criterion-text">Collateral superficial veins (non-varicose)</div>
+                                <div class="criterion-points">+1</div>
+                            </div>
+                            <div class="criterion">
+                                <div class="criterion-check"></div>
+                                <div class="criterion-text">Previously documented DVT</div>
+                                <div class="criterion-points">+1</div>
+                            </div>
+                            <div class="criterion">
+                                <div class="criterion-check"></div>
+                                <div class="criterion-text">Alternative diagnosis as likely or more likely than DVT</div>
+                                <div class="criterion-points">-2</div>
+                            </div>
+                        </div>
+                        
+                        <div class="calculator-result">
+                            <div class="result-label">Total Wells Score:</div>
+                            <div class="result-score">3</div>
+                            <div class="result-assessment high">HIGH RISK</div>
                         </div>
                     </div>
                 </div>
@@ -484,6 +587,25 @@
     <script>
         // Update copyright year
         document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Animation for process steps
+        document.addEventListener('DOMContentLoaded', function() {
+            const processSteps = document.querySelectorAll('.process-step');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, {
+                threshold: 0.2,
+                rootMargin: '0px 0px -100px 0px'
+            });
+            
+            processSteps.forEach(step => {
+                observer.observe(step);
+            });
+        });
     </script>
 </body>
 </html>

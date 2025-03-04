@@ -1,9 +1,9 @@
 /**
  * VenoSense - Workflow Page Specific Styles
- * Image-free design with rich visual elements created through CSS
+ * Modern, image-free design with CSS-based visualizations
  */
 
-/* ===== WORKFLOW OVERVIEW ===== */
+/* ===== COMMON STYLES ===== */
 .subtitle {
     font-size: var(--text-lg);
     color: var(--gray-600);
@@ -11,6 +11,7 @@
     margin: 0 auto var(--space-6);
 }
 
+/* ===== WORKFLOW OVERVIEW ===== */
 .workflow-overview {
     display: flex;
     flex-direction: column;
@@ -18,8 +19,18 @@
     margin-top: var(--space-6);
 }
 
-.workflow-overview__content {
-    flex: 1;
+@media (min-width: 768px) {
+    .workflow-overview {
+        flex-direction: row;
+    }
+
+    .workflow-overview__content {
+        flex: 1.3;
+    }
+
+    .workflow-overview__visual {
+        flex: 1;
+    }
 }
 
 .workflow-overview__content p {
@@ -50,7 +61,51 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    font-size: var(--text-xl);
+    position: relative;
+}
+
+/* Icon styles - using CSS instead of emojis */
+.icon-clock::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.icon-clock::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 2px;
+    background-color: white;
+    transform: rotate(45deg);
+    transform-origin: 100% 50%;
+    right: 15px;
+}
+
+.icon-chart::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+    top: 15px;
+    left: 15px;
+}
+
+.icon-chart::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 2px;
+    background-color: white;
+    transform: rotate(-45deg);
+    transform-origin: 100% 50%;
+    top: 25px;
+    left: 25px;
 }
 
 .workflow-benefit__content h3 {
