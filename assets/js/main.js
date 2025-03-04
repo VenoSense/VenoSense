@@ -38,4 +38,24 @@ document.addEventListener('DOMContentLoaded', function() {
             this.style.transform = '';
         });
     });
+    
+    // Set active navigation based on current page
+    function setActiveNavigation() {
+        const currentPath = window.location.pathname;
+        const pageName = currentPath.split('/').pop();
+        
+        const navLinks = document.querySelectorAll('.site-nav__link');
+        navLinks.forEach(link => {
+            // Reset all links
+            link.classList.remove('active');
+            
+            // Set active class for current page
+            if (link.getAttribute('href') === pageName) {
+                link.classList.add('active');
+            }
+        });
+    }
+    
+    // Initialize navigation
+    setActiveNavigation();
 });
