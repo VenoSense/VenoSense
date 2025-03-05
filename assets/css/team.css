@@ -59,8 +59,8 @@
 }
 
 .team-member__photo {
-    width: 200px;
-    height: 200px;
+    width: 100px; /* Reduced from 200px to make 2x smaller */
+    height: 100px; /* Reduced from 200px to make 2x smaller */
     border-radius: 50%;
     overflow: hidden;
     margin-right: var(--space-5);
@@ -448,8 +448,8 @@
     .team-member__photo {
         margin-right: 0;
         margin-bottom: var(--space-4);
-        width: 150px;
-        height: 150px;
+        width: 75px; /* Reduced from 150px to maintain proportion */
+        height: 75px; /* Reduced from 150px to maintain proportion */
     }
     
     .advisor__photo {
