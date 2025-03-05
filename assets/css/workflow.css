@@ -72,6 +72,8 @@
     height: 20px;
     border: 2px solid white;
     border-radius: 50%;
+    top: 15px;
+    left: 15px;
 }
 
 .icon-clock::after {
@@ -82,46 +84,50 @@
     background-color: white;
     transform: rotate(45deg);
     transform-origin: 100% 50%;
-    right: 15px;
+    top: 25px;
+    left: 25px;
 }
 
 .icon-chart::before {
     content: "";
     position: absolute;
-    width: 18px;
-    height: 14px;
-    border-bottom: 2px solid white;
-    border-left: 2px solid white;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    bottom: 15px;
+    left: 15px;
 }
 
 .icon-chart::after {
     content: "";
     position: absolute;
+    height: 20px;
     width: 2px;
-    height: 16px;
     background-color: white;
-    left: 30px;
-    top: 17px;
+    bottom: 15px;
+    left: 15px;
 }
 
 .icon-document::before {
     content: "";
     position: absolute;
-    width: 16px;
-    height: 20px;
+    width: 20px;
+    height: 25px;
     border: 2px solid white;
     border-radius: 2px;
+    top: 12px;
+    left: 15px;
 }
 
 .icon-document::after {
     content: "";
     position: absolute;
-    width: 10px;
+    width: 12px;
     height: 2px;
     background-color: white;
-    top: 22px;
-    left: 20px;
-    box-shadow: 0 -5px 0 white, 0 -10px 0 white;
+    top: 18px;
+    left: 19px;
+    box-shadow: 0 5px 0 white, 0 10px 0 white;
 }
 
 .workflow-benefit__content h3 {
@@ -354,33 +360,29 @@
 .process-timeline {
     position: relative;
     padding: var(--space-6) 0;
+    margin-top: var(--space-8);
 }
 
 .process-step {
     position: relative;
     margin-bottom: var(--space-10);
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.process-step.active {
     opacity: 1;
     transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .process-step:last-child {
     margin-bottom: 0;
 }
 
+/* Timeline connector */
 .process-step::before {
     content: "";
     position: absolute;
     top: 40px;
-    left: calc(var(--space-8) / 2);
-    transform: translateX(-50%);
-    height: calc(100% + var(--space-10));
+    left: 20px;
     width: 3px;
+    height: calc(100% + var(--space-6));
     background-color: var(--gray-300);
     z-index: 0;
 }
@@ -389,34 +391,35 @@
     display: none;
 }
 
+/* Step marker/number styling */
 .process-step__marker {
     position: relative;
     z-index: 2;
-    display: flex;
-    justify-content: center;
-    margin-bottom: var(--space-4);
+    margin-bottom: var(--space-3);
 }
 
 .process-step__number {
-    width: var(--space-8);
-    height: var(--space-8);
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--secondary);
+    background-color: var (--secondary);
     color: white;
-    font-size: var(--text-lg);
+    font-size: var(--text-md);
     font-weight: 700;
     border-radius: 50%;
     box-shadow: var(--shadow-md);
-    border: 3px solid var(--white);
+    border: 2px solid var(--white);
 }
 
+/* Step content styling */
 .process-step__content {
     background-color: var(--white);
     border-radius: var(--radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-md);
+    margin-left: var(--space-5);
 }
 
 .process-step__header {
@@ -445,6 +448,18 @@
     background-color: var(--gray-50);
     padding: var(--space-5);
     border-radius: var(--radius-md);
+}
+
+/* Animation for steps */
+.process-step {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.process-step.active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 /* Patient Form Visualization */
@@ -886,7 +901,7 @@
 .report-button {
     height: 36px;
     width: 80px;
-    border-radius: var (--radius-sm);
+    border-radius: var(--radius-sm);
     background-color: var(--gray-200);
 }
 
@@ -906,12 +921,52 @@
     margin-bottom: var(--space-10);
 }
 
+@media (min-width: 768px) {
+    .integration-flow {
+        flex-direction: row;
+        justify-content: center;
+        gap: var(--space-4);
+    }
+    
+    .integration-connector {
+        height: auto;
+        width: 60px;
+    }
+    
+    .connector-line {
+        width: 100%;
+        height: 3px;
+    }
+    
+    .connector-plus {
+        top: 50%;
+        left: 50%;
+    }
+    
+    .connector-arrow {
+        right: -5px;
+        left: auto;
+        top: 50%;
+        bottom: auto;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 8px solid var(--gray-300);
+        transform: translateY(-50%);
+    }
+}
+
 .integration-step {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: var(--space-3);
     margin-bottom: var(--space-4);
+}
+
+@media (min-width: 768px) {
+    .integration-step {
+        margin-bottom: 0;
+    }
 }
 
 .integration-icon {
@@ -1031,8 +1086,20 @@
 
 .settings-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr;
     gap: var(--space-5);
+}
+
+@media (min-width: 768px) {
+    .settings-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .settings-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .setting-card {
@@ -1106,11 +1173,17 @@
     gap: var(--space-8);
 }
 
+@media (min-width: 992px) {
+    .wells-module {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 .wells-explanation {
     background-color: var(--white);
     border-radius: var(--radius-lg);
     overflow: hidden;
-    box-shadow: var(--shadow-md);
+    box-shadow: var (--shadow-md);
 }
 
 .wells-intro {
@@ -1146,8 +1219,14 @@
 
 .interpretation-levels {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: var(--space-4);
+}
+
+@media (min-width: 576px) {
+    .interpretation-levels {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .level {
