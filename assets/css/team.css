@@ -1,7 +1,11 @@
 /**
- * VenoSense - Team Page Specific Styles
- * Updated with unified team section
+ * VenoSense - Team Page Styles
  */
+
+/* Page Header */
+.team-header {
+    background: linear-gradient(135deg, var(--secondary-light), var(--secondary));
+}
 
 /* ===== TEAM INTRODUCTION ===== */
 .team-intro {
@@ -21,9 +25,15 @@
 /* ===== TEAM GRID STYLES ===== */
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-6);
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
     margin-top: var(--space-8);
+}
+
+@media (min-width: 768px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .team-member {
@@ -31,7 +41,7 @@
     border-radius: var(--radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-md);
-    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
 }
@@ -41,10 +51,21 @@
     box-shadow: var(--shadow-lg);
 }
 
+.team-member__header {
+    display: flex;
+    align-items: center;
+    padding: var(--space-5);
+    border-bottom: 1px solid var(--gray-200);
+}
+
 .team-member__photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
     overflow: hidden;
-    height: 250px;
-    border-radius: 0;
+    margin-right: var(--space-5);
+    flex-shrink: 0;
+    border: 4px solid var(--secondary-light);
 }
 
 .team-member__photo img {
@@ -59,6 +80,7 @@
 }
 
 .team-member__info {
+    flex: 1;
     padding: var(--space-5);
     display: flex;
     flex-direction: column;
@@ -66,22 +88,33 @@
 }
 
 .team-member__info h3 {
-    color: var(--primary);
+    margin: 0 0 var(--space-2) 0;
+    color: var(--secondary);
     font-size: var(--text-xl);
-    margin-bottom: var(--space-2);
 }
 
 .team-member__title {
-    color: var(--secondary);
+    color: var(--gray-600);
     font-weight: 500;
+    margin: 0;
     font-size: var(--text-md);
     margin-bottom: var(--space-4);
 }
 
 .team-member__bio {
+    padding: var(--space-5);
     color: var(--gray-700);
     margin-bottom: var(--space-4);
     flex-grow: 1;
+}
+
+.team-member__bio p {
+    color: var(--gray-700);
+    margin-bottom: var(--space-4);
+}
+
+.team-member__bio p:last-child {
+    margin-bottom: 0;
 }
 
 .team-member__contact {
@@ -119,11 +152,23 @@
 }
 
 /* ===== ADVISORS SECTION ===== */
-.advisors-grid {
+.advisor-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--space-5);
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
     margin-top: var(--space-6);
+}
+
+@media (min-width: 768px) {
+    .advisor-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .advisor-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .advisor {
@@ -131,8 +176,11 @@
     border-radius: var(--radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-md);
-    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .advisor:hover {
@@ -140,9 +188,19 @@
     box-shadow: var(--shadow-lg);
 }
 
+.advisor__header {
+    padding: var(--space-4);
+    text-align: center;
+    border-bottom: 1px solid var(--gray-200);
+}
+
 .advisor__photo {
-    height: 200px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
     overflow: hidden;
+    margin: 0 auto var(--space-3);
+    border: 3px solid var(--secondary-light);
 }
 
 .advisor__photo img {
@@ -156,26 +214,27 @@
     transform: scale(1.05);
 }
 
-.advisor h3 {
-    color: var(--primary);
-    margin-top: var (--space-4);
-    padding: 0 var(--space-4);
+.advisor__info h3 {
+    margin: 0 0 var(--space-1) 0;
     font-size: var(--text-lg);
+    color: var(--secondary);
 }
 
 .advisor__title {
-    color: var(--secondary);
-    padding: 0 var(--space-4);
-    margin-bottom: var(--space-2);
     font-size: var(--text-sm);
-    font-weight: 500;
+    color: var(--gray-600);
+    margin: 0;
 }
 
-.advisor__specialty {
-    color: var(--gray-600);
-    padding: 0 var(--space-4) var(--space-4);
+.advisor__bio {
+    padding: var(--space-4);
+    flex: 1;
+}
+
+.advisor__bio p {
     font-size: var(--text-sm);
-    font-style: italic;
+    color: var(--gray-700);
+    margin: 0;
 }
 
 /* ===== CTA SECTION ===== */
@@ -230,6 +289,70 @@
     display: flex;
     gap: var(--space-4);
     justify-content: center;
+}
+
+/* Join Our Team Section */
+.team-cta {
+    background-color: var(--gray-50);
+}
+
+.careers-text {
+    max-width: 800px;
+    margin: 0 auto var(--space-8);
+}
+
+.careers-areas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+    max-width: 900px;
+    margin: 0 auto var(--space-8);
+}
+
+@media (min-width: 768px) {
+    .careers-areas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.career-area {
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease;
+}
+
+.career-area:hover {
+    transform: translateY(-5px);
+}
+
+.career-area__icon {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(17, 54, 77, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--space-4);
+    color: var(--secondary);
+}
+
+.career-area h3 {
+    margin-bottom: var(--space-2);
+    color: var(--secondary);
+}
+
+.career-area p {
+    color: var(--gray-600);
+    margin: 0;
+}
+
+.btn--lg {
+    padding: var(--space-4) var(--space-6);
+    font-size: var(--text-md);
 }
 
 /* ===== PLACEHOLDER IMAGES ===== */
@@ -312,5 +435,25 @@
     .team-member__contact {
         flex-direction: column;
         gap: var(--space-3);
+    }
+}
+
+@media (max-width: 767px) {
+    .team-member__header {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: var(--space-4);
+    }
+    
+    .team-member__photo {
+        margin-right: 0;
+        margin-bottom: var(--space-4);
+        width: 150px;
+        height: 150px;
+    }
+    
+    .advisor__photo {
+        width: 100px;
+        height: 100px;
     }
 }
